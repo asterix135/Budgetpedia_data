@@ -1,0 +1,11 @@
+Residential and commercial taxation 4494829 4636687
+
+Taxation from other governments 210407 205670
+
+Deduct: Amounts relating to school boards -1948260 -2643240
+
+User charges (Note 3) 1422823 1436439
+
+Grants 2018070 1606400
+
+Other 312644 286403

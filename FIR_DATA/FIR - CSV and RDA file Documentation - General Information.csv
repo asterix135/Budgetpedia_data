@@ -1,0 +1,43 @@
+FIR DATA - GENERAL INFORMATION
+
+Each observation (Row) contains a nearly complete FIR* for  a municipalitiy for a given year.
+Each variable (Column) represents a piece of information from that municipality's FIR for that year.
+
+"Most variables use a ""SLC"" naming convention in the following format: ""slc.xx.yyyy.zz"""
+
+Where:          xx     =     Schedule
+                  yyyy     =     Line
+                     zz      =     Column
+
+"Example:          slc.10.9910.01 refers to Schedule 10, Line 9910, Column 1 (Total Revenue)"
+
+Data for municipalities that have not yet submitted their FIR for a given reporting year is represented by 
+"""NA""."
+
+LT1ACTUAL
+
+ a = Loaded
+""""" = Not Loaded"
+
+MUNTIER
+
+LT = Lower Tier
+ST = Single Tier
+UT = Upper Tier
+
+LT1TYPE
+
+0 = Upper Tier
+1 = City
+3 = Separated Town
+4 = Town
+5 = Village
+6 = Township
+
+FSB_OFFICECODE
+
+11 = Central
+12 = Eastern
+13 = NorthEastern
+14 = NorthWestern
+15 = Western

@@ -1,0 +1,20 @@
+For 2013 and 2014
+
+1) Used downloaded pdfs of city consolidated financial statements in gdrive/Budgetpedia/Research/Budget Datasets/Dataset Series 4 (Statements of Revenue and Expenses)
+2) For each pdf, manually transcribe data from 'Consolidated Statement of Operations and Accumulated Surplus' to csv file (chart is an image file, and OCR pretty much fails)
+3) In transcription, keep only year's actual data (ignore Budget column and previous year's restated column)
+4) Create 2 different csv files - one for Revenue items, one for Expense items
+
+
+For 2015, 2012 - 1999
+
+1) Used downloaded pdfs of city consolidated financial statements in gdrive/Budgetpedia/Research/Budget Datasets/Dataset Series 4 (Statements of Revenue and Expenses)
+2) For each year, copy either expense or revenue section from 'Consolidated Statement of Operations and Accumulated Surplus' to a txt file
+3) Parse using parse_copied_text.py  (command line: python3 parse_copied_text.py input_file_name output_file_name optional:index_value)
+4) Note any error messages, and double-check output file
+4a) NOTE That for 2002 and earlier, there is some manual correction needed for copy/paste and to correct for negative numbers due to the 'Deduct: taxation relating to school boards' item
+5) Do this for both expense and revenue section
+
+For 1998
+same as previous, but because there are no commas, script fails,
+So copy/paste values in

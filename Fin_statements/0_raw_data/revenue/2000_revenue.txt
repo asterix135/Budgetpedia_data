@@ -1,0 +1,11 @@
+Residential and commercial taxation 4,439,930 4,505,647 4,496,744
+
+Taxation from other governments 179,987 143,213 194,578
+
+Deduct: taxation relating to school boards 1,831,274 (1,853,410) (1,892,758)
+
+User charges (Note 10) 1,613,827 1,415,721 1,360,809
+
+Grants 1,564,623 1,339,807 1,250,187
+
+Other 324,321 794,355 2,759,503

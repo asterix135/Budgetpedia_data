@@ -1,0 +1,17 @@
+General government 738,292 766,194 580,498
+
+Protection to persons and property 1,433,989 1,527,398 1,500,550
+
+Transportation 2,896,224 2,685,230 2,398,891
+
+Environmental services 1,101,050 976,355 1,060,052
+
+Health services 362,782 377,143 356,129
+
+Social and family services 1,878,802 1,810,217 1,781,475
+
+Social housing 747,260 792,786 803,784
+
+Recreation and cultural services 877,491 841,519 849,001
+
+Planning and development 119,805 186,463 136,179

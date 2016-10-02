@@ -1,0 +1,10 @@
+Original budget info documents (eg, pdfs)
+
+Budgetpedia/Research/Budget Datasets
+
+My documents
+
+Budgetpedia/Budgetpedia Explorer Data Sources/toronto/statements
+
+Github data locations
+budgetpedia-dev-frontend/db/repositories/toronto/datasets/summary/intake

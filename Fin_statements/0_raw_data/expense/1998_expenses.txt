@@ -1,0 +1,15 @@
+General government 593671 546193
+
+Protection to persons and property 832314 840295
+
+Transportation services 1762825 1587925
+
+Environmental services 587061 582035
+
+Health services 147940 143026
+
+Social and family services 1401855 1338495
+
+Recreation and cultural services 539565 580669
+
+Planning and development 443025 76162
