@@ -1,0 +1,444 @@
+42005 Southgate Tp
+23000 Wellington Co
+7008 Prescott ST
+47007 Greater Madawaska Tp
+26011 Port Colborne C
+40028 Goderich T
+20002 Toronto C
+41043 Saugeen Shores T
+44027 Lake of Bays Tp
+39041 North Middlesex M
+54054 Chamberlain Tp
+54006 Latchford T
+58044 Nipigon Tp
+54026 Harley Tp
+46011 Minden Hills Tp
+2036 Clarence-Rockland C
+26032 Welland C
+14028 Trent Hills M
+12073 Hastings Highlands M
+57004 Hilton Tp
+22012 Mono T
+22005 East Luther Grand Valley Tp
+7050 Merrickville-Wolford V
+15035 North Kawartha Tp
+38000 Lambton Co
+57091 White River Tp
+26028 Pelham T
+30012 Kitchener C
+37003 Leamington M
+54034 Hilliard Tp
+54010 Temiskaming Shores C
+40046 Howick Tp
+51001 Tehkummah Tp
+12048 Tudor and Cashel Tp
+57061 Sault Ste. Marie C
+52028 Baldwin Tp
+28030 Norfolk County
+52007 Markstay-Warren M
+49012 McMurrich-Monteith Tp
+51028 Burpee and Mills Tp
+59024 Chapple Tp
+51025 Gordon/Barrie Island M
+57066 Prince Tp
+59001 Atikokan Tp
+43021 Essa Tp
+24000 Halton R
+31000 Perth Co
+60034 Sioux Lookout M
+49058 Powassan M
+7017 Front of Yonge Tp
+38037 Lambton Shores M
+60008 Sioux Narrows-Nestor Falls Tp
+56077 Mattice - Val Cote Tp
+38016 Enniskillen Tp
+10005 Kingston C
+11002 Loyalist Tp
+39002 Newbury V
+18029 Uxbridge Tp
+43080 Severn Tp
+9033 Lanark Highlands Tp
+21024 Caledon T
+32018 Ingersoll T
+22016 Mulmur Tp
+19038 Richmond Hill T
+49066 Callander M
+9010 Tay Valley Tp
+57040 The North Shore Tp
+26037 Thorold C
+39020 Middlesex Centre M
+51015 Northeastern Manitoulin & The Isl. T
+19070 Georgina T
+19036 Markham T
+47048 Renfrew T
+23040 Minto T
+49048 Sundridge V
+25005 Hamilton C
+48021 Mattawa T
+54024 Kerns Tp
+18009 Whitby T
+44053 Muskoka Lakes Tp
+56014 Black River - Matheson Tp
+12054 Wollaston Tp
+38005 Dawn-Euphemia Tp
+52004 St.-Charles M
+58041 Red Rock Tp
+31035 North Perth M
+38033 Plympton-Wyoming T
+59012 Fort Frances T
+47015 Bonnechere Valley Tp
+58058 Greenstone M
+32000 Oxford Co
+9001 Montague Tp
+46024 Dysart et al Tp
+7000 Leeds and Grenville UCo
+24001 Oakville T
+1016 South Dundas Tp
+12058 Faraday Tp
+23015 Erin T
+47000 Renfrew Co
+7019 Leeds and the Thousand Islands Tp
+49018 Kearney T
+31002 Perth East Tp
+12023 Centre Hastings M
+12010 Quinte West C
+40010 Bluewater M
+26047 Niagara-on-the-Lake T
+24002 Burlington C
+44018 Bracebridge T
+49024 Ryerson Tp
+10041 North Frontenac Tp
+48044 North Bay C
+60040 Red Lake M
+39013 Strathroy-Caradoc Tp
+38019 Petrolia T
+26000 Niagara R
+43040 Springwater Tp
+14015 Alnwick-Haldimand Tp
+41061 Northern Bruce Peninsula M
+40050 North Huron Tp
+42004 West Grey M
+43050 Ramara Tp
+26043 Niagara Falls C
+7015 Brockville C
+47096 Deep River T
+39010 Adelaide-Metcalfe Tp
+37025 Amherstburg T
+19000 York R
+24009 Milton T
+37043 Tecumseh T
+43002 Adjala-Tosorontio Tp
+49041 Magnetawan M
+47077 Petawawa T
+12039 Marmora and Lake M
+37034 LaSalle T
+49039 Whitestone M
+58051 Schreiber Tp
+59040 Dawson Tp
+57076 Wawa M
+42031 Chatsworth Tp
+31008 Perth South Tp
+7006 Augusta Tp
+51026 Gore Bay T
+59042 Rainy River T
+58016 O'Connor Tp
+60042 Ear Falls Tp
+49036 Carling Tp
+26065 Grimsby T
+23001 Puslinch Tp
+49014 Perry Tp
+14010 Cramahe Tp
+60001 Ignace Tp
+7003 Edwardsburgh/Cardinal Tp
+1000 Stormont, Dundas and Glengarry UCo
+22014 Orangeville T
+47023 Madawaska Valley Tp
+1037 North Stormont Tp
+54014 Harris Tp
+36003 Chatham-Kent M
+9004 Smiths Falls ST
+39000 Middlesex Co
+32038 East Zorra - Tavistock Tp
+54056 Matachewan Tp
+26053 St. Catharines C
+48026 Bonfield Tp
+51009 Central Manitoulin Tp
+47050 Whitewater Region Tp
+31016 St. Marys ST
+59031 Morley Tp
+9007 Drummond-North Elmsley Tp
+48017 Papineau-Cameron Tp
+10002 Frontenac Islands Tp
+54008 Cobalt T
+57008 St. Joseph Tp
+12051 Limerick Tp
+52026 Espanola T
+54047 Charlton/Dack M
+48022 Calvin Tp
+41037 Arran-Elderslie M
+29006 Brantford C
+43030 Clearview Tp
+12000 Hastings Co
+18017 Clarington M
+11010 Greater Napanee T
+37001 Pelee Tp
+30024 Wellesley Tp
+57019 Plummer Additional Tp
+19054 East Gwillimbury T
+42029 Hanover T
+37000 Essex Co
+9000 Lanark Co
+23023 Mapleton Tp
+34028 Dutton-Dunwich M
+18005 Ajax T
+41030 Brockton M
+52003 Killarney M
+15030 Havelock-Belmont-Methuen Tp
+37008 Kingsville T
+9028 Carleton Place T
+18000 Durham R
+58034 Dorion Tp
+57021 Bruce Mines T
+48001 South Algonquin Tp
+26014 Wainfleet Tp
+49022 Burk's Falls V
+2000 Prescott and Russell UCo
+57051 Macdonald Meredith et al Tp
+49003 Seguin Tp
+16002 Kawartha Lakes C
+26021 West Lincoln Tp
+54049 Evanturel Tp
+47030 Killaloe, Hagarty and Richards Tp
+19044 Whitchurch - Stouffville T
+21000 Peel R
+49019 Armour Tp
+47046 Horton Tp
+52031 Nairn and Hyman Tp
+49071 Nipissing Tp
+11023 Stone Mills Tp
+34011 Aylmer T
+15012 Cavan Monaghan Tp
+60049 Pickle Lake Tp
+21005 Mississauga C
+40000 Huron Co
+58066 Manitouwadge Tp
+59011 Alberton Tp
+40015 Huron East M
+52019 Sables-Spanish Rivers Tp
+47018 Brudenell, Lyndoch and Raglan Tp
+41053 The South Bruce Peninsula T
+38040 Warwick Tp
+58012 Gillies Tp
+12017 Stirling-Rawdon Tp
+38002 St. Clair Tp
+7040 Athens Tp
+39057 Lucan Biddulph Tp
+28005 Haldimand County
+49046 Strong Tp
+9024 Beckwith Tp
+7024 Gananoque ST
+56076 Hearst T
+15014 Peterborough C
+22008 Amaranth Tp
+58004 Thunder Bay C
+12005 Belleville C
+30016 Waterloo C
+2048 Russell Tp
+15017 Smith-Ennismore-Lakefield Tp
+9030 Mississippi Mills T
+30006 Cambridge C
+38031 Point Edward V
+15005 Otonabee-South Monaghan Tp
+34000 Elgin Co
+39036 London C
+22019 Melancthon Tp
+58001 Neebing M
+30029 Woolwich Tp
+41020 Kincardine M
+6005 Ottawa C
+54058 McGarry Tp
+44002 Gravenhurst T
+10000 Frontenac Co
+2001 East Hawkesbury Tp
+12067 Carlow/Mayo Tp
+12036 Madoc Tp
+42041 The Blue Mountains T
+15021 Douro-Dummer Tp
+14022 Port Hope M
+32004 Tillsonburg T
+12027 Tweed M
+18001 Pickering C
+1002 South Glengarry Tp
+7030 Rideau Lakes Tp
+19048 Newmarket T
+2005 Champlain Tp
+34035 West Elgin M
+49031 McDougall Tp
+54032 Brethour Tp
+43025 New Tecumseth T
+38011 Brooke-Alvinston M
+58054 Terrace Bay Tp
+59016 La Vallee Tp
+42055 Georgian Bluffs Tp
+37039 Windsor C
+42047 Meaford M
+18020 Scugog Tp
+56056 Moonbeam Tp
+2030 Alfred and Plantagenet Tp
+57096 Hornepayne Tp
+22021 Shelburne T
+57038 Blind River T
+57023 Huron Shores M
+19028 Vaughan C
+51011 Assiginack Tp
+14021 Cobourg T
+51021 Billings Tp
+60021 Machin Tp
+43017 Innisfil T
+10013 South Frontenac Tp
+37049 Lakeshore T
+2044 Casselman V
+1012 Cornwall C
+44000 Muskoka D
+43064 Wasaga Beach T
+19046 Aurora T
+23020 Wellington North Tp
+15000 Peterborough Co
+40003 South Huron M
+49032 Parry Sound T
+57041 Elliot Lake C
+57039 Spanish T
+57028 Thessalon T
+43072 Penetanguishene T
+41004 South Bruce M
+34021 St. Thomas C
+54062 Larder Lake Tp
+7055 North Grenville M
+2008 Hawkesbury T
+7011 Elizabethtown-Kitley Tp
+38030 Sarnia C
+42059 Owen Sound C
+15002 Asphodel-Norwood Tp
+29002 Brant County
+18039 Brock Tp
+47041 Admaston/Bromley Tp
+49028 McKellar Tp
+32002 Norwich Tp
+48019 Mattawan Tp
+46020 Algonquin Highlands Tp
+12002 Deseronto T
+56065 Moosonee T
+48069 Temagami M
+43031 Collingwood T
+39025 Thames Centre M
+56031 Iroquois Falls T
+49051 Joly Tp
+32027 Zorra Tp
+56052 Fauquier-Strickland Tp
+54021 Hudson Tp
+54052 Englehart T
+34015 Central Elgin M
+52001 French River M
+43042 Barrie C
+15041 Galway-Cavendish and Harvey Tp
+60011 Kenora C
+42013 Grey Highlands M
+23008 Guelph C
+47002 Arnprior T
+47098 Head, Clara and Maria Tp
+43000 Simcoe Co
+48031 Chisholm Tp
+41000 Bruce Co
+30018 Wilmot Tp
+43070 Tay Tp
+11033 Addington Highlands Tp
+43047 Oro-Medonte Tp
+32045 Blandford - Blenheim Tp
+40030 Ashfield-Colborne-Wawanosh Tp
+23005 Guelph/Eramosa Tp
+59019 Emo Tp
+51034 Cockburn Island Tp
+56027 Timmins C
+54029 Casey Tp
+30001 North Dumfries Tp
+56066 Kapuskasing T
+18013 Oshawa C
+54066 Gauthier Tp
+57006 Hilton Beach V
+56073 Opasatika Tp
+34024 Southwold Tp
+40048 Morris-Turnberry M
+40025 Central Huron M
+54036 Armstrong Tp
+52092 Chapleau Tp
+32042 Woodstock C
+21010 Brampton C
+39003 Southwest Middlesex M
+46002 Highlands East M
+9021 Perth T
+54042 James Tp
+14019 Hamilton Tp
+54068 Kirkland Lake T
+12061 Bancroft T
+14005 Brighton M
+42000 Grey Co
+57001 Jocelyn Tp
+7033 Westport V
+57011 Laird Tp
+54001 Coleman Tp
+2011 The Nation M
+38018 Oil Springs V
+47064 Pembroke C
+34007 Malahide Tp
+22000 Dufferin Co
+48034 East Ferris Tp
+57016 Johnson Tp
+24015 Halton Hills T
+47091 Laurentian Hills T
+44042 Huntsville T
+26057 Lincoln T
+19049 King Tp
+43074 Midland T
+43052 Orillia C
+49056 South River V
+13002 Prince Edward County C
+26003 Fort Erie T
+60025 Dryden C
+10025 Central Frontenac Tp
+12001 Tyendinaga Tp
+44065 Georgian Bay Tp
+37020 Essex T
+1047 North Glengarry Tp
+22001 East Garafraxa Tp
+32011 South-West Oxford Tp
+58059 Marathon T
+48050 West Nipissing M
+14000 Northumberland Co
+47068 North Algona-Wilberforce Tp
+58028 Shuniah M
+1026 North Dundas Tp
+47063 Laurentian Valley Tp
+57079 Dubreuilville Tp
+54038 Thornloe V
+53005 Greater Sudbury C
+49005 The Archipelago Tp
+58007 Oliver Paipoonge M
+57014 Tarbutt and Tarbutt Additional Tp
+11000 Lennox and Addington Co
+43013 Bradford-West Gwillimbury T
+34003 Bayham M
+59045 Lake of The Woods Tp
+58019 Conmee Tp
+30000 Waterloo R
+56037 Cochrane T
+31017 West Perth M
+41010 Huron-Kinloss Tp
+46000 Haliburton Co
+56070 Val Rita-Harty Tp
+31011 Stratford C
+56048 Smooth Rock Falls T
+47003 McNab-Braeside Tp
+43068 Tiny Tp
+23010 Centre Wellington Tp
+1009 South Stormont Tp
+49054 Machar Tp
