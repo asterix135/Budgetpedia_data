@@ -1,0 +1,14 @@
+.idea
+fir.rda
+.RData
+.Rhistory
+*.Rproj
+.DS_Store
+.xlsx
+.ipynb_chekpoints
+
+FIR_DATA/.ipynb_checkpoints/exploratory-checkpoint.ipynb
+
+*.xlsx
+
+FIR_DATA/2009_and_later/FIR - CSV and RDA file Documentation - Data Dictionary.xlsx
