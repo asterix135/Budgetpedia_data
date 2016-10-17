@@ -26,22 +26,29 @@ def build_category_graph(exp_dict, cat_dict, city_data, link_file):
     """
     Builds a graph with 3 parent nodes (REV, EXP, STF) showing
         hierarchy of budget categories
-    :param exp_dict: dictionary of category codes to be imported
+    :param exp_dict: dictionary of budget category codes to be imported
     :param cat_dict: dictionary of hand-crafted categories for hierarchy
     :param city_data: dictionary with city data values
     :param link_file: string with location of csv showing relationships
-    :returns dictionary: dict representation of graph
+    :returns ??: ?? Have to figure out ??
     """
-    graph = {'REV': {}, 'EXP': {}, 'STF': {}}
+    tree_data = []
     with open(link_file) as f:
         reader = csv.reader(f)
         next(reader)
         for line in reader:
+            tree_data.append(line)
+        parent, ids, discard = zip(*tree_data)
+        
+
+
             parent = line[0]
             child = line[1]
             if child in graph:
-                # pop child & add as node of parent
-                pass
+                child_node = graph.pop(child)
+            else:
+                child_node = child
+
             if parent in graph:
                 # add child as node of graph[parent]
                 pass
@@ -121,7 +128,7 @@ def main(argv):
             quit()
 
     # build graph hierarchy
-    graph = {'REV': {}, 'EXP': {}, 'STF': {}}
+    graph = None
 
 if __name__ == '__main__':
     main(sys.argv)
