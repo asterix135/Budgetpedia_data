@@ -6,6 +6,7 @@ fir.rda
 .DS_Store
 .xlsx
 .ipynb_chekpoints
+__pycache__
 
 FIR_DATA/.ipynb_checkpoints/exploratory-checkpoint.ipynb
 
