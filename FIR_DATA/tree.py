@@ -41,8 +41,12 @@ class Node():
 
 
 class Tree():
-    def __init__(self):
+    def __init__(self, root_ids=None):
         self._nodes = {}
+        if root_ids and type(root_ids) is not list:
+            raise TypeError('root_ids must be a list')
+        for root_id in root_ids:
+            self._nodes[root_id] = Node(root_id)
 
     def add_node(self, node_id, node_val, parent_id):
         # 1. first check if node exists.  if so, we will update the node
