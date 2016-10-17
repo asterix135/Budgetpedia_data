@@ -26,6 +26,9 @@ class Node():
     def get_node_data(self):
         return self._data
 
+    def update_node_val(self, node_val):
+        self._data = node_val
+
     def update_parent(self, parent_node):
         if type(parent_node) is not Node:
             raise TypeError('parent_node must be a Node')
@@ -41,20 +44,19 @@ class Node():
 
 
 class Tree():
-    def __init__(self, root_ids=None):
+    def __init__(self):
         self._nodes = {}
-        if root_ids and type(root_ids) is not list:
-            raise TypeError('root_ids must be a list')
-        for root_id in root_ids:
-            self._nodes[root_id] = Node(root_id)
+        self._root_nodes = []  # List of ids of root nodes
 
-    def add_node(self, node_id, node_val, parent_id):
+    def add_node(self, node_id, parent_id, node_val=None):
         # 1. first check if node exists.  if so, we will update the node
         #    if not, create the node withough parent or children
         if node_id in self._nodes:
             new_node = self._nodes[node_id]
+            self._root_nodes.remove(node_id)
+            new_node.update_node_val(node_val)
         else:
-            new_node = Node(node_id)
+            new_node = Node(node_id, node_val)
         # 2. check if parent node exists - if so, id & add new_node as child
         if parent_id in self._nodes:
             parent_node = self._nodes[parent_id]
@@ -67,3 +69,14 @@ class Tree():
         new_node.update_parent(parent_node)
         # 5. add new node to Tree
         self._nodes.append(new_node)
+
+    def get_node(self, node_id):
+        if node_id in self._nodes:
+            return self._nodes[node_id]
+
+    def get_all_roots(self):
+        """ Returns a copy of the root_node list """
+        return list(self._root_nodes)
+
+    def has_node(self, node_id):
+        return node_id in self._nodes

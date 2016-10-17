@@ -32,30 +32,19 @@ def build_category_graph(exp_dict, cat_dict, city_data, link_file):
     :param link_file: string with location of csv showing relationships
     :returns ??: ?? Have to figure out ??
     """
-    tree_data = []
+    # 1. build tree from adjacency list
+    cat_tree = Tree()
     with open(link_file) as f:
         reader = csv.reader(f)
         next(reader)
         for line in reader:
-            tree_data.append(line)
-        parent, ids, discard = zip(*tree_data)
-        
+            cat_tree.add_node(line[1], line[0])
+    # 2. add data points to leaves of tree
+    for data_point in city_data:
+        if cat_tree.has_node(data_point):
+            
+    # 3. build csv file required for input
 
-
-            parent = line[0]
-            child = line[1]
-            if child in graph:
-                child_node = graph.pop(child)
-            else:
-                child_node = child
-
-            if parent in graph:
-                # add child as node of graph[parent]
-                pass
-            else:
-                # add graph[parent] as node
-                pass
-    return graph
 
 
 def main(argv):
