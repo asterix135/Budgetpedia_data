@@ -76,7 +76,7 @@ class Tree():
         if node_id in self._nodes:
             new_node = self._nodes[node_id]
             self._root_nodes.remove(node_id)
-            new_node.update_node_val(node_val)
+            new_node.update_val(node_val)
         else:
             new_node = Node(node_id, node_val)
         # 2. check if parent node exists - if so, id & add new_node as child
@@ -87,6 +87,7 @@ class Tree():
         else:
             parent_node = Node(parent_id, child_nodes=[new_node])
             self._nodes[parent_id] = parent_node
+            self._root_nodes.append(parent_id)
         # 4. update new node with parent
         new_node.update_parent(parent_node)
         # 5. add new node to Tree

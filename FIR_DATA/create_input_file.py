@@ -2,8 +2,9 @@
 Run from command line - Python 3.5 or later
 cd to folder containing this file
 python3 create_input_file.py city_id data_set_id
-:param city_id: ID of city to pull data for; 'A' selects all
-:param data_set_id: 'old' uses 2000-2008 data; anything else uses 2009+ data
+:param city_id (optional): ID of city to pull data for; 'A' or None selects all
+:param data_set_id (optional): 'old' uses 2000-2008 data;
+                                anything else uses 2009+ data
 """
 
 import sys
@@ -27,7 +28,7 @@ def populate_tree(tree, city_year_data):
     """
     Takes existing tree and adds values for specific city in specific year
     :param tree: Tree object, fully fleshed out
-    :param city_data: dict with city data values for specific city & year
+    :param city_year_data: dict with city data values for specific city & year
                       (already subset from all data)
     :returns Tree: copy of tree with values populated into leaves
     """
@@ -40,11 +41,10 @@ def populate_tree(tree, city_year_data):
     return new_tree
 
 
-def build_category_tree(city_data, link_file):
+def build_category_tree(link_file):
     """
     Builds a tree with 3 parent nodes (REV, EXP, STF) showing
         hierarchy of budget categories
-    :param city_data: dictionary with city data values
     :param link_file: string with location of csv showing relationships
     :returns Tree: Tree object representing hierarchy
     """
@@ -57,8 +57,8 @@ def build_category_tree(city_data, link_file):
             cat_tree.add_node(line[1], line[0])
     # check to make sure that root nodes are only ['REV', 'EXP', 'STF']
     if not set(cat_tree.root_nodes()).issubset({'REV', 'EXP', 'STF'}):
-        raise ValueError('Tree root nodes are incorrect.  Should be only ' \
-                         'REV, EXP and STF.\n' \
+        raise ValueError('Tree root nodes are incorrect.  Should be only '
+                         'REV, EXP and STF.\n'
                          'Root values are %s' % str(set(cat_tree.root_nodes())))
     return cat_tree
 
@@ -75,9 +75,17 @@ def main(argv):
         map_file = NEW_MAP
         cat_file = NEW_CAT_FILE
         link_file = NEW_LINK_FILE
+
+    # TODO: REMOVE AFTER TESTING
+    data_file = 'test_data/data_file.csv'
+    map_file = 'test_data/map_file.csv'
+    cat_file = 'test_data/cat_file.csv'
+    link_file = 'test_data/link_file.csv'
+
+
+
     if len(argv) > 1 and argv[1] != 'A':
-        # TODO: check datatype of city_id
-        city_id = str(argv[1])
+        city_id = argv[1]  # argvs are imported as strings
     else:
         city_id = 'all'
 
@@ -90,13 +98,12 @@ def main(argv):
                 col_name = line['Variable Name']
                 col_desc = line['Column Description']
                 line_desc = line['Variable / Line Description']
-                cols_to_import[col_name] = [col_desc + ': ' + line_desc]
+                cols_to_import[col_name] = col_desc + ': ' + line_desc
         if len(cols_to_import) == 0:
             print('\n=========================================')
             print('No Columns Selected for Import.  Aborting')
             print('=========================================\n')
             quit()
-
     # Import actual dollar values
     city_data = {}
     with open(data_file) as f:
@@ -118,7 +125,6 @@ def main(argv):
         print('No city data imported.  Aborting')
         print('================================\n')
         quit()
-
     # import hand-crafted categories
     my_cats = {}
     with open(cat_file) as f:
@@ -133,7 +139,11 @@ def main(argv):
             quit()
 
     # build tree
-    budget_tree = build_category_tree(city_data, link_file)
+    budget_tree = build_category_tree(link_file)
+    # populate tree for each city/year
+    # TODO: make this general - right now it's only test for 1 yr of toronto
+    data_to_populate = city_data['20002']['2014']
+    tree_for_year = populate_tree(budget_tree, data_to_populate)
 
 
 if __name__ == '__main__':
