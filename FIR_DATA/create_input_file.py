@@ -8,6 +8,7 @@ python3 create_input_file.py city_id data_set_id
 
 import sys
 import csv
+from tree import Tree
 # import pandas
 
 NEW_CAT_FILE = 'budget_categories.csv'
@@ -22,15 +23,30 @@ OLD_MAP = 'pre_2009/FIR - CSV and RDA file Documentation - 2000 to 2008 - ' \
         'Data Dictionary.csv'
 
 
-def build_category_graph(exp_dict, cat_dict, city_data, link_file):
+def populate_tree(tree, city_year_data):
     """
-    Builds a graph with 3 parent nodes (REV, EXP, STF) showing
+    Takes existing tree and adds values for specific city in specific year
+    :param tree: Tree object, fully fleshed out
+    :param city_data: dict with city data values for specific city & year
+                      (already subset from all data)
+    :returns Tree: copy of tree with values populated into leaves
+    """
+    new_tree = tree.copy_tree()
+    for data_point in city_year_data:
+        if new_tree.has_node(data_point):
+            new_tree.update_node_val(data_point, city_year_data[data_point])
+        else:
+            raise KeyError('%s not in Tree' % str(data_point))
+    return new_tree
+
+
+def build_category_tree(city_data, link_file):
+    """
+    Builds a tree with 3 parent nodes (REV, EXP, STF) showing
         hierarchy of budget categories
-    :param exp_dict: dictionary of budget category codes to be imported
-    :param cat_dict: dictionary of hand-crafted categories for hierarchy
     :param city_data: dictionary with city data values
     :param link_file: string with location of csv showing relationships
-    :returns ??: ?? Have to figure out ??
+    :returns Tree: Tree object representing hierarchy
     """
     # 1. build tree from adjacency list
     cat_tree = Tree()
@@ -39,12 +55,12 @@ def build_category_graph(exp_dict, cat_dict, city_data, link_file):
         next(reader)
         for line in reader:
             cat_tree.add_node(line[1], line[0])
-    # 2. add data points to leaves of tree
-    for data_point in city_data:
-        if cat_tree.has_node(data_point):
-            
-    # 3. build csv file required for input
-
+    # check to make sure that root nodes are only ['REV', 'EXP', 'STF']
+    if not set(cat_tree.root_nodes()).issubset({'REV', 'EXP', 'STF'}):
+        raise ValueError('Tree root nodes are incorrect.  Should be only ' \
+                         'REV, EXP and STF.\n' \
+                         'Root values are %s' % str(set(cat_tree.root_nodes())))
+    return cat_tree
 
 
 def main(argv):
@@ -116,8 +132,9 @@ def main(argv):
             print('=================================\n')
             quit()
 
-    # build graph hierarchy
-    graph = None
+    # build tree
+    budget_tree = build_category_tree(city_data, link_file)
+
 
 if __name__ == '__main__':
     main(sys.argv)

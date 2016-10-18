@@ -26,8 +26,9 @@ class Node():
     def get_node_data(self):
         return self._data
 
-    def update_node_val(self, node_val):
+    def update_val(self, node_val):
         self._data = node_val
+
 
     def update_parent(self, parent_node):
         if type(parent_node) is not Node:
@@ -42,6 +43,20 @@ class Node():
         else:
             self._children = [child_node]
 
+    def node_key(self):
+        return self._key
+
+    def parent_key(self):
+        return self._parent.node_key() if self._parent else None
+
+    def child_keys(self):
+        if self._children:
+            child_id_list = []
+            for child in self._children:
+                child_id_list.append(child.node_key())
+            return child_id_list
+        return None
+
 
 class Tree():
     def __init__(self):
@@ -49,6 +64,13 @@ class Tree():
         self._root_nodes = []  # List of ids of root nodes
 
     def add_node(self, node_id, parent_id, node_val=None):
+        """
+        Adds new node to tree
+        Adds new node as child of parent node (creates parent if needed)
+        :param node_id: id for new node
+        :param parent_id: id of new node's parent (required)
+        :param node_val (optional): Node value
+        """
         # 1. first check if node exists.  if so, we will update the node
         #    if not, create the node withough parent or children
         if node_id in self._nodes:
@@ -68,15 +90,41 @@ class Tree():
         # 4. update new node with parent
         new_node.update_parent(parent_node)
         # 5. add new node to Tree
-        self._nodes.append(new_node)
+        self._nodes[node_id] = new_node
 
     def get_node(self, node_id):
+        """Returns a specific node from the tree"""
         if node_id in self._nodes:
             return self._nodes[node_id]
 
-    def get_all_roots(self):
+    def root_nodes(self):
         """ Returns a copy of the root_node list """
         return list(self._root_nodes)
 
     def has_node(self, node_id):
+        """Returns bookean indicating whether a given node_id is in tree"""
         return node_id in self._nodes
+
+    def update_node_val(self, node_id, new_val):
+        """
+        Updates the value of a given node
+        :param node_id: id of node to update
+        :param new_val: value to set for node
+        """
+        self._nodes[node_id].update_val(new_val)
+
+    def copy_tree(self):
+        """returns a copy of the tree"""
+        tree_copy = Tree()
+        for old_node in self._nodes.values():
+            tree_copy.add_node(old_node.node_key, old_node.parent_key)
+        return tree_copy
+
+    def traverse_tree(self, node_id):
+        """
+        Returns an iterator for every node in a tree starting with given root
+        Explores each branch to a leaf node & for leaf only, returns value
+        :param node_id: id of node to use as starting root
+        :returns tba: tbd
+        """
+        pass
