@@ -118,7 +118,8 @@ class Tree():
         """returns a copy of the tree"""
         tree_copy = Tree()
         for old_node in self._nodes.values():
-            tree_copy.add_node(old_node.node_key, old_node.parent_key)
+            if old_node.parent_key() is not None:  # don't add root nodes here
+                tree_copy.add_node(old_node.node_key(), old_node.parent_key())
         return tree_copy
 
     def traverse_tree(self, node_id):

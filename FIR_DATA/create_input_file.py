@@ -77,12 +77,10 @@ def main(argv):
         link_file = NEW_LINK_FILE
 
     # TODO: REMOVE AFTER TESTING
-    data_file = 'test_data/data_file.csv'
-    map_file = 'test_data/map_file.csv'
-    cat_file = 'test_data/cat_file.csv'
-    link_file = 'test_data/link_file.csv'
-
-
+    # data_file = 'test_data/data_file.csv'
+    # map_file = 'test_data/map_file.csv'
+    # cat_file = 'test_data/cat_file.csv'
+    # link_file = 'test_data/link_file.csv'
 
     if len(argv) > 1 and argv[1] != 'A':
         city_id = argv[1]  # argvs are imported as strings
