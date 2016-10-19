@@ -1,4 +1,6 @@
 """
+Creates input files for budgetpedia from FIR data:
+    Either for all cities/year or one city only
 Run from command line - Python 3.5 or later
 cd to folder containing this file
 python3 create_input_file.py city_id data_set_id
@@ -24,23 +26,6 @@ OLD_MAP = 'pre_2009/FIR - CSV and RDA file Documentation - 2000 to 2008 - ' \
         'Data Dictionary.csv'
 
 
-def populate_tree(tree, city_year_data):
-    """
-    Takes existing tree and adds values for specific city in specific year
-    :param tree: Tree object, fully fleshed out
-    :param city_year_data: dict with city data values for specific city & year
-                      (already subset from all data)
-    :returns Tree: copy of tree with values populated into leaves
-    """
-    new_tree = tree.copy_tree()
-    for data_point in city_year_data:
-        if new_tree.has_node(data_point):
-            new_tree.update_node_val(data_point, city_year_data[data_point])
-        else:
-            raise KeyError('%s not in Tree' % str(data_point))
-    return new_tree
-
-
 def build_category_tree(link_file):
     """
     Builds a tree with 3 parent nodes (REV, EXP, STF) showing
@@ -61,6 +46,34 @@ def build_category_tree(link_file):
                          'REV, EXP and STF.\n'
                          'Root values are %s' % str(set(cat_tree.root_nodes())))
     return cat_tree
+
+
+def populate_tree(tree, city_year_data):
+    """
+    Takes existing tree and adds values for specific city in specific year
+    :param tree: Tree object, fully fleshed out
+    :param city_year_data: dict with city data values for specific city & year
+                      (already subset from all data)
+    :returns Tree: copy of tree with values populated into leaves
+    """
+    new_tree = tree.copy_tree()
+    for data_point in city_year_data:
+        if new_tree.has_node(data_point):
+            new_tree.update_node_val(data_point, city_year_data[data_point])
+        else:
+            raise KeyError('%s not in Tree' % str(data_point))
+    return new_tree
+
+
+def build_csv_data(tree, cat_dict):
+    # recursive
+    # base case = leaf
+    # base case: return code, desc, value
+    
+
+
+def add_metadata():
+    pass
 
 
 def main(argv):

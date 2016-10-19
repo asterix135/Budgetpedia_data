@@ -3,8 +3,10 @@ tree class for use in creating data hierarchy
 """
 
 class Node():
-    def __init__(self, key, val=None, parent_node=None, child_nodes=None):
+    def __init__(self, key, desc=None, val=None,
+                 parent_node=None, child_nodes=None):
         self._key = key
+        self._decription = desc
         self._data = val
         if parent_node is not None and type(parent_node) is not Node:
             raise TypeError('parent_node must be a Node')
@@ -29,6 +31,8 @@ class Node():
     def update_val(self, node_val):
         self._data = node_val
 
+    def update_description(self, new_desc):
+        self._description = new_desc
 
     def update_parent(self, parent_node):
         if type(parent_node) is not Node:
@@ -78,7 +82,7 @@ class Tree():
             self._root_nodes.remove(node_id)
             new_node.update_val(node_val)
         else:
-            new_node = Node(node_id, node_val)
+            new_node = Node(node_id, val=node_val)
         # 2. check if parent node exists - if so, id & add new_node as child
         if parent_id in self._nodes:
             parent_node = self._nodes[parent_id]
