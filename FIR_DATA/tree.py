@@ -67,13 +67,14 @@ class Tree():
         self._nodes = {}
         self._root_nodes = []  # List of ids of root nodes
 
-    def add_node(self, node_id, parent_id, node_val=None):
+    def add_node(self, node_id, parent_id, node_val=None, node_desc=None):
         """
         Adds new node to tree
         Adds new node as child of parent node (creates parent if needed)
         :param node_id: id for new node
         :param parent_id: id of new node's parent (required)
         :param node_val (optional): Node value
+        :param node_desc (optional): Human-friendly description of node
         """
         # 1. first check if node exists.  if so, we will update the node
         #    if not, create the node withough parent or children
@@ -81,8 +82,10 @@ class Tree():
             new_node = self._nodes[node_id]
             self._root_nodes.remove(node_id)
             new_node.update_val(node_val)
+            if node_desc:
+                new_node.update_description(node_desc)
         else:
-            new_node = Node(node_id, val=node_val)
+            new_node = Node(node_id, val=node_val, desc=node_desc)
         # 2. check if parent node exists - if so, id & add new_node as child
         if parent_id in self._nodes:
             parent_node = self._nodes[parent_id]
