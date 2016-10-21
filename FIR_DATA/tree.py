@@ -50,8 +50,17 @@ class Node():
     def node_key(self):
         return self._key
 
+    def node_description(self):
+        return self._description
+
+    def node_val(self):
+        return self._data
+
     def parent_key(self):
         return self._parent.node_key() if self._parent else None
+
+    def get_children(self):
+        return self._children
 
     def child_keys(self):
         if self._children:

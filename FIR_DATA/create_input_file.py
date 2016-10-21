@@ -26,11 +26,12 @@ OLD_MAP = 'pre_2009/FIR - CSV and RDA file Documentation - 2000 to 2008 - ' \
         'Data Dictionary.csv'
 
 
-def build_category_tree(link_file):
+def build_category_tree(link_file, cat_description_dict):
     """
     Builds a tree with 3 parent nodes (REV, EXP, STF) showing
         hierarchy of budget categories
     :param link_file: string with location of csv showing relationships
+    :param cat_description_dict: dict with human-friendly descriptions
     :returns Tree: Tree object representing hierarchy
     """
     # 1. build tree from adjacency list
@@ -39,7 +40,10 @@ def build_category_tree(link_file):
         reader = csv.reader(f)
         next(reader)
         for line in reader:
-            cat_tree.add_node(line[1], line[0])
+            if line[1] not in cat_description_dict:
+                raise KeyError('%s desription not defined' % str(line[1]))
+            cat_tree.add_node(line[1], line[0],
+                              node_desc=cat_description_dict[line[1]])
     # check to make sure that root nodes are only ['REV', 'EXP', 'STF']
     if not set(cat_tree.root_nodes()).issubset({'REV', 'EXP', 'STF'}):
         raise ValueError('Tree root nodes are incorrect.  Should be only '
@@ -65,14 +69,57 @@ def populate_tree(tree, city_year_data):
     return new_tree
 
 
-def build_csv_data(tree, cat_dict):
+def append_child_data(node, path_list):
+    if node.is_leaf():
+        return path_list.extend([node.node_key(), node.node_description(),
+                                 node.node_val()])
+    else:
+        path_list.extend([node.node_key(), node.node_description()])
+        for child_node in node.get_children():
+            return append_child_data(child_node, path_list)
+
+
+def build_csv_data(tree, start_node_key, path_list=None):
+    start_node = tree.get_node(start_node_key)
+    # base case
+    if node.is_leaf:
+        return
+    else:
+        for node in node:
+            pass
+
     # recursive
     # base case = leaf
     # base case: return code, desc, value
-    
+
 
 
 def add_metadata():
+    """
+    _META_START_,
+    SOURCE_DOCUMENT_LINK_ORIGINAL,
+    SOURCE_DOCUMENT_LINK_COPY,https://drive.google.com/open?id=0B208oCU9D8OuVmZIU0tFRkhTcU0
+    SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY,https://drive.google.com/open?id=0B208oCU9D8OuZW9OVU5sUVZtVDg
+    SOURCE_DOCUMENT_TITLE,"CITY OF TORONTO CONSOLIDATED FINANCIAL STATEMENTS FOR THE YEAR ENDED DECEMBER 31, 1998"
+    SOURCE_DOCUMENT_TABLE_LOCATION,p.17
+    SOURCE_DOCUMENT_TABLE_TITLE,"CONSOLIDATED STATEMENT OF OPERATIONS FOR THE YEAR ENDED DECEMBER 31, 1998"
+    SOURCE_CSV_PRECURSOR_LINK,https://drive.google.com/open?id=0B0nzg-ld6eh_LXBTX0dmMWQtNlU
+    SOURCE_CSV_PRECURSOR_AUTHOR_ID,Chris
+    YEAR,1998
+    VERSION,Actual
+    ASPECT,Revenues
+    NOTES_CONTENT,
+    NOTES_SEVERITY,
+    UNITS_NAME,Dollar
+    UNITS_CODE,DOLLAR
+    UNITS_MULTIPLIER,1000
+    TOTAL_AMOUNT,
+    INTAKE_DATETIME,
+    INTAKE_OPERATOR_ID,Chris
+    COLUMNS_CATEGORIES,Program:NAME
+    COLUMNS_ATTRIBUTES,"Amount:VALUE, Notes:DESCRIPTION, Severity: CODE"
+    _META_END_,
+    """
     pass
 
 
@@ -148,13 +195,18 @@ def main(argv):
             print('No categories imported.  Aborting')
             print('=================================\n')
             quit()
+    # merge hand-crafted categories and column descriptions into one dict
+    all_cats = {**cols_to_import, **my_cats}
 
     # build tree
-    budget_tree = build_category_tree(link_file)
+    budget_tree = build_category_tree(link_file, all_cats)
     # populate tree for each city/year
     # TODO: make this general - right now it's only test for 1 yr of toronto
     data_to_populate = city_data['20002']['2014']
     tree_for_year = populate_tree(budget_tree, data_to_populate)
+
+    # build csv
+
 
 
 if __name__ == '__main__':
