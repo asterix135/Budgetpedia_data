@@ -69,19 +69,7 @@ def populate_tree(tree, city_year_data):
     return new_tree
 
 
-def append_child_data(node, path_list):
-    if node.is_leaf():
-        return path_list.extend([node.node_key(), node.node_description(),
-                                 node.node_val()])
-    else:
-        path_list.extend([node.node_key(), node.node_description()])
-        print(len(node.get_children()))
-        for child_node in node.get_children():
-            append_child_data(child_node, path_list)
-            return path_list
-
-
-def build_csv_data(node, path_list, curr_path=None):
+def append_child_data(node, path_list, curr_path=None):
     """
     Recursive function to build csv file for Budgetpedia input
     :param node: a Node object.  First call should be to a root node.
@@ -92,29 +80,28 @@ def build_csv_data(node, path_list, curr_path=None):
     :returns nothing this is modified by the function so does not need to
                         be specified
     """
-    if curr_node.is_leaf:
-        path_extension = [curr_node.node_key(),
-                          curr_node.node_description(),
-                          curr_node.node_val()]
+    if node.is_leaf():
+        path_extension = [node.node_key(),
+                          node.node_description(),
+                          node.node_val()]
         if curr_path is not None:
             curr_path.extend(path_extension)
         else:
             curr_path = path_extension
-        path.list.append(curr_path)
+        path_list.append(curr_path)
     else:
-        path_extension = [curr_node.node_key(),
-                          curr_node.node_description()]
+        path_extension = [node.node_key(),
+                          node.node_description()]
         if curr_path is not None:
             curr_path.extend(path_extension)
         else:
             curr_path = path_extension
         for child_node in node.get_children():
-            build_csv_data(child_node, path_list, curr_path)
+            append_child_data(child_node, path_list, curr_path[:])
 
-    # recursive
-    # base case = leaf
-    # base case: return code, desc, value
 
+def build_csv_data(list_of_paths):
+    pass
 
 
 def add_metadata():
@@ -160,10 +147,10 @@ def main(argv):
         link_file = NEW_LINK_FILE
 
     # TODO: REMOVE AFTER TESTING
-    data_file = 'test_data/data_file.csv'
-    map_file = 'test_data/map_file.csv'
-    cat_file = 'test_data/cat_file.csv'
-    link_file = 'test_data/link_file.csv'
+    # data_file = 'test_data/data_file.csv'
+    # map_file = 'test_data/map_file.csv'
+    # cat_file = 'test_data/cat_file.csv'
+    # link_file = 'test_data/link_file.csv'
 
     if len(argv) > 1 and argv[1] != 'A':
         city_id = argv[1]  # argvs are imported as strings
@@ -232,8 +219,8 @@ def main(argv):
     roots = tree_for_year.root_nodes()
     all_paths = []
     test_path = append_child_data(tree_for_year.get_node(roots[0]), all_paths)
-    print(test_path)
-
+    for path in all_paths:
+        print(path)
 
 if __name__ == '__main__':
     main(sys.argv)
