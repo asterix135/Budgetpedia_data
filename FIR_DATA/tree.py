@@ -6,7 +6,7 @@ class Node():
     def __init__(self, key, desc=None, val=None,
                  parent_node=None, child_nodes=None):
         self._key = key
-        self._decription = desc
+        self._description = desc
         self._data = val
         if parent_node is not None and type(parent_node) is not Node:
             raise TypeError('parent_node must be a Node')
