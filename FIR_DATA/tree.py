@@ -135,14 +135,14 @@ class Tree():
         tree_copy = Tree()
         for old_node in self._nodes.values():
             if old_node.parent_key() is not None:  # don't add root nodes here
-                tree_copy.add_node(old_node.node_key(), old_node.parent_key())
+                tree_copy.add_node(old_node.node_key(),
+                                   old_node.parent_key(),
+                                   node_desc=old_node.node_desc())
         return tree_copy
 
-    def traverse_tree(self, node_id):
+    def reset_values(self):
         """
-        Returns an iterator for every node in a tree starting with given root
-        Explores each branch to a leaf node & for leaf only, returns value
-        :param node_id: id of node to use as starting root
-        :returns tba: tbd
+        Resets all values in tree to None
         """
-        pass
+        for node in self._nodes:
+            node.update_val(None)
