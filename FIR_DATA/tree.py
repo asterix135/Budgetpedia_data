@@ -137,7 +137,7 @@ class Tree():
             if old_node.parent_key() is not None:  # don't add root nodes here
                 tree_copy.add_node(old_node.node_key(),
                                    old_node.parent_key(),
-                                   node_desc=old_node.node_desc())
+                                   node_desc=old_node.node_description())
         return tree_copy
 
     def reset_values(self):
