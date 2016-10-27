@@ -1,0 +1,458 @@
+20002		Toronto C		View/FI141999 Toronto C.zip
+18000		DURHAM R		View/FI141800 DURHAM R.zip
+18013		Oshawa C		View/FI141813 Oshawa C.zip
+18001		Pickering C		View/FI141801 Pickering C.zip
+18005		Ajax T		View/FI141805 Ajax T.zip
+18017		Clarington M		View/FI141817 Clarington M.zip
+18009		Whitby T		View/FI141809 Whitby T.zip
+18039		Brock Tp		View/FI141839 Brock Tp.zip
+18020		Scugog Tp		View/FI141820 Scugog Tp.zip
+18029		Uxbridge Tp		View/FI141829 Uxbridge Tp.zip
+24000		HALTON R		View/FI142400 HALTON R.zip
+24002		Burlington C		View/FI142402 Burlington C.zip
+24015		Halton Hills T		View/FI142415 Halton Hills T.zip
+24009		Milton T		View/FI142409 Milton T.zip
+24001		Oakville T		View/FI142401 Oakville T.zip
+25005		Hamilton C		View/FI142518 Hamilton C.zip
+26000		NIAGARA R		View/FI142600 NIAGARA R.zip
+26043		Niagara Falls C		View/FI142725 Niagara Falls C.zip
+26011		Port Colborne C		View/FI142711 Port Colborne C.zip
+26053		St Catharines C		View/FI142629 St Catharines C.zip
+26032		Welland C		View/FI142719 Welland C.zip
+26037		Thorold C		View/FI142731 Thorold C.zip
+26003		Fort Erie T		View/FI142703 Fort Erie T.zip
+26065		Grimsby T		View/FI142615 Grimsby T.zip
+26057		Lincoln T		View/FI142622 Lincoln T.zip
+26047		Niagara-on-the-Lake T		View/FI142627 Niagara-on-the-Lake T.zip
+26028		Pelham T		View/FI142732 Pelham T.zip
+26014		Wainfleet Tp		View/FI142714 Wainfleet Tp.zip
+26021		West Lincoln Tp		View/FI142602 West Lincoln Tp.zip
+21000		PEEL R		View/FI142100 PEEL R.zip
+21010		Brampton C		View/FI142110 Brampton C.zip
+21005		Mississauga C		View/FI142105 Mississauga C.zip
+21024		Caledon T		View/FI142124 Caledon T.zip
+19000		YORK R		View/FI142000 YORK R.zip
+19028		Vaughan C		View/FI141928 Vaughan C.zip
+19046		Aurora T		View/FI141946 Aurora T.zip
+19036		Markham C		View/FI141936 Markham C.zip
+19048		Newmarket T		View/FI141948 Newmarket T.zip
+19038		Richmond Hill T		View/FI141938 Richmond Hill T.zip
+19044		Whitchurch-Stouffville T		View/FI141944 Whitchurch-Stouffville T.zip
+19054		East Gwillimbury T		View/FI141954 East Gwillimbury T.zip
+19070		Georgina T		View/FI141970 Georgina T.zip
+19049		King Tp		View/FI141949 King Tp.zip
+44000		MUSKOKA D		View/FI144400 MUSKOKA D.zip
+44018		Bracebridge T		View/FI144418 Bracebridge T.zip
+44002		Gravenhurst T		View/FI144402 Gravenhurst T.zip
+44042		Huntsville T		View/FI144442 Huntsville T.zip
+44065		Georgian Bay Tp		View/FI144465 Georgian Bay Tp.zip
+44027		Lake of Bays Tp		View/FI144427 Lake of Bays Tp.zip
+44053		Muskoka Lakes Tp		View/FI144453 Muskoka Lakes Tp.zip
+22000		DUFFERIN CO		View/FI142200 DUFFERIN CO.zip
+22014		Orangeville T		View/FI142214 Orangeville T.zip
+22021		Shelburne T		View/FI142221 Shelburne T.zip
+22012		Mono T		View/FI142212 Mono T.zip
+22008		Amaranth Tp		View/FI142208 Amaranth Tp.zip
+22001		East Garafraxa Tp		View/FI142201 East Garafraxa Tp.zip
+22019		Melancthon Tp		View/FI142219 Melancthon Tp.zip
+22016		Mulmur Tp		View/FI142216 Mulmur Tp.zip
+22005		Grand Valley T		View/FI142204 Grand Valley T.zip
+43000		SIMCOE CO		View/FI144300 SIMCOE CO.zip
+43042		Barrie C		View/FI144342 Barrie C.zip
+43052		Orillia C		View/FI144352 Orillia C.zip
+43031		Collingwood T		View/FI144331 Collingwood T.zip
+43074		Midland T		View/FI144374 Midland T.zip
+43072		Penetanguishene T		View/FI144372 Penetanguishene T.zip
+43064		Wasaga Beach T		View/FI144364 Wasaga Beach T.zip
+43017		Innisfil T		View/FI144316 Innisfil T.zip
+43013		Bradford-West Gwillimbury T		View/FI144312 Bradford-West Gwillimbury T.zip
+43025		New Tecumseth T		View/FI144324 New Tecumseth T.zip
+43021		Essa Tp		View/FI144321 Essa Tp.zip
+43068		Tiny Tp		View/FI144368 Tiny Tp.zip
+43002		Adjala-Tosorontio Tp		View/FI144301 Adjala-Tosorontio Tp.zip
+43030		Clearview Tp		View/FI144329 Clearview Tp.zip
+43047		Oro-Medonte Tp		View/FI144346 Oro-Medonte Tp.zip
+43050		Ramara Tp		View/FI144348 Ramara Tp.zip
+43080		Severn Tp		View/FI144351 Severn Tp.zip
+43040		Springwater Tp		View/FI144341 Springwater Tp.zip
+43070		Tay Tp		View/FI144353 Tay Tp.zip
+
+06005		Ottawa C		View/FI140614 Ottawa C.zip
+10000		FRONTENAC CO		View/FI141000 FRONTENAC CO.zip
+10005		Kingston C		View/FI141011 Kingston C.zip
+10025		Central Frontenac Tp		View/FI141039 Central Frontenac Tp.zip
+10002		Frontenac Islands Tp		View/FI141001 Frontenac Islands Tp.zip
+10041		North Frontenac Tp		View/FI141042 North Frontenac Tp.zip
+10013		South Frontenac Tp		View/FI141029 South Frontenac Tp.zip
+46000		HALIBURTON CO		View/FI144600 HALIBURTON CO.zip
+46024		Dysart et al Tp		View/FI144624 Dysart et al Tp.zip
+46011		Minden Hills Tp		View/FI144616 Minden Hills Tp.zip
+46002		Highlands East M		View/FI144601 Highlands East M.zip
+46020		Algonquin Highlands Tp		View/FI144621 Algonquin Highlands Tp.zip
+12000		HASTINGS CO		View/FI141200 HASTINGS CO.zip
+12005		Belleville C		View/FI141208 Belleville C.zip
+12010		Quinte West C		View/FI141204 Quinte West C.zip
+12002		Deseronto T		View/FI141202 Deseronto T.zip
+12061		Bancroft T		View/FI141262 Bancroft T.zip
+12058		Faraday Tp		View/FI141258 Faraday Tp.zip
+12051		Limerick Tp		View/FI141251 Limerick Tp.zip
+12036		Madoc Tp		View/FI141236 Madoc Tp.zip
+12048		Tudor and Cashel Tp		View/FI141248 Tudor and Cashel Tp.zip
+12001		Tyendinaga Tp		View/FI141201 Tyendinaga Tp.zip
+12054		Wollaston Tp		View/FI141254 Wollaston Tp.zip
+12023		Centre Hastings M		View/FI141230 Centre Hastings M.zip
+12017		Stirling-Rawdon Tp		View/FI141220 Stirling-Rawdon Tp.zip
+12027		Tweed M		View/FI141231 Tweed M.zip
+12073		Hastings Highlands M		View/FI141290 Hastings Highlands M.zip
+12067		Carlow-Mayo Tp		View/FI141270 Carlow-Mayo Tp.zip
+12039		Marmora and Lake M		View/FI141241 Marmora and Lake M.zip
+09000		LANARK CO		View/FI140900 LANARK CO.zip
+09004		Smiths Falls ST		View/FI140904 Smiths Falls ST.zip
+09028		Carleton Place T		View/FI140928 Carleton Place T.zip
+09021		Perth T		View/FI140921 Perth T.zip
+09030		Mississippi Mills T		View/FI140931 Mississippi Mills T.zip
+09024		Beckwith Tp		View/FI140924 Beckwith Tp.zip
+09001		Montague Tp		View/FI140901 Montague Tp.zip
+09033		Lanark Highlands Tp		View/FI140940 Lanark Highlands Tp.zip
+09007		Drummond-North Elmsley Tp		View/FI140919 Drummond-North Elmsley Tp.zip
+09010		Tay Valley Tp		View/FI140911 Tay Valley Tp.zip
+07000		LEEDS AND GRENVILLE UCO		View/FI140700 LEEDS AND GRENVILLE UCO.zip
+07015		Brockville C		View/FI140802 Brockville C.zip
+07024		Gananoque ST		View/FI140814 Gananoque ST.zip
+07008		Prescott ST		View/FI140708 Prescott ST.zip
+07033		Westport V		View/FI140842 Westport V.zip
+07050		Merrickville-Wolford V		View/FI140714 Merrickville-Wolford V.zip
+07006		Augusta Tp		View/FI140706 Augusta Tp.zip
+07017		Front of Yonge Tp		View/FI140806 Front of Yonge Tp.zip
+07055		North Grenville M		View/FI140719 North Grenville M.zip
+07030		Rideau Lakes Tp		View/FI140831 Rideau Lakes Tp.zip
+07040		Athens Tp		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			<ACRONYM Title="Lower-Tier">	LT	</ACRONYM>	</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+07003		Edwardsburgh-Cardinal Tp		View/FI140701 Edwardsburgh-Cardinal Tp.zip
+07019		Leeds and the Thousand Islands Tp		View/FI140812 Leeds and the Thousand Islands Tp.zip
+07011		Elizabethtown-Kitley Tp		View/FI140801 Elizabethtown-Kitley Tp.zip
+11000		LENNOX AND ADDINGTON CO		View/FI141100 LENNOX AND ADDINGTON CO.zip
+11010		Greater Napanee T		View/FI141121 Greater Napanee T.zip
+11033		Addington Highlands Tp		View/FI141134 Addington Highlands Tp.zip
+11002		Loyalist Tp		View/FI141104 Loyalist Tp.zip
+11023		Stone Mills Tp		View/FI141124 Stone Mills Tp.zip
+14000		NORTHUMBERLAND CO		View/FI141400 NORTHUMBERLAND CO.zip
+14021		Cobourg T		View/FI141421 Cobourg T.zip
+14005		Brighton M		View/FI141408 Brighton M.zip
+14028		Trent Hills M		View/FI141435 Trent Hills M.zip
+14022		Port Hope M		View/FI141423 Port Hope M.zip
+14019		Hamilton Tp		View/FI141419 Hamilton Tp.zip
+14015		Alnwick-Haldimand Tp		View/FI141450 Alnwick-Haldimand Tp.zip
+14010		Cramahe Tp		View/FI141411 Cramahe Tp.zip
+15000		PETERBOROUGH CO		View/FI141500 PETERBOROUGH CO.zip
+15014		Peterborough C		View/FI141514 Peterborough C.zip
+15002		Asphodel-Norwood Tp		View/FI141501 Asphodel-Norwood Tp.zip
+15035		North Kawartha Tp		View/FI141536 North Kawartha Tp.zip
+15012		Cavan Monaghan Tp		View/FI141509 Cavan Monaghan Tp.zip
+15021		Douro-Dummer Tp		View/FI141522 Douro-Dummer Tp.zip
+15041		Trent Lakes M		View/FI141542 Trent Lakes M.zip
+15030		Havelock-Belmont-Methuen Tp		View/FI141531 Havelock-Belmont-Methuen Tp.zip
+15005		Otonabee-South Monaghan Tp		View/FI141506 Otonabee-South Monaghan Tp.zip
+15017		Selwyn Tp		View/FI141516 Selwyn Tp.zip
+02000		PRESCOTT AND RUSSELL UCO		View/FI140200 PRESCOTT AND RUSSELL UCO.zip
+02036		Clarence-Rockland C		View/FI140316 Clarence-Rockland C.zip
+02008		Hawkesbury T		View/FI140208 Hawkesbury T.zip
+02044		Casselman V		View/FI140302 Casselman V.zip
+02001		East Hawkesbury Tp		View/FI140201 East Hawkesbury Tp.zip
+02048		Russell Tp		View/FI140306 Russell Tp.zip
+02030		Alfred and Plantagenet Tp		View/FI140231 Alfred and Plantagenet Tp.zip
+02005		Champlain Tp		View/FI140209 Champlain Tp.zip
+02011		The Nation M		View/FI140212 The Nation M.zip
+13002		Prince Edward County C		View/FI141350 Prince Edward County C.zip
+47000		RENFREW CO		View/FI144700 RENFREW CO.zip
+47064		Pembroke C		View/FI144764 Pembroke C.zip
+47002		Arnprior T		View/FI144702 Arnprior T.zip
+47096		Deep River T		View/FI144796 Deep River T.zip
+47048		Renfrew T		View/FI144748 Renfrew T.zip
+47077		Petawawa T		View/FI144779 Petawawa T.zip
+47091		Laurentian Hills T		View/FI144792 Laurentian Hills T.zip
+47098		Head Clara and Maria Tp		View/FI144798 Head Clara and Maria Tp.zip
+47046		Horton Tp		View/FI144746 Horton Tp.zip
+47003		McNab-Braeside Tp		View/FI144701 McNab-Braeside Tp.zip
+47018		Brudenell Lyndoch and Raglan Tp		View/FI144719 Brudenell Lyndoch and Raglan Tp.zip
+47068		North Algona-Wilberforce Tp		View/FI144769 North Algona-Wilberforce Tp.zip
+47041		Admaston-Bromley Tp		View/FI144742 Admaston-Bromley Tp.zip
+47063		Laurentian Valley Tp		View/FI144766 Laurentian Valley Tp.zip
+47030		Killaloe Hagarty and Richards Tp		View/FI144731 Killaloe Hagarty and Richards Tp.zip
+47023		Madawaska Valley Tp		View/FI144726 Madawaska Valley Tp.zip
+47015		Bonnechere Valley Tp		View/FI144738 Bonnechere Valley Tp.zip
+47050		Whitewater Region Tp		View/FI144758 Whitewater Region Tp.zip
+47007		Greater Madawaska Tp		View/FI144706 Greater Madawaska Tp.zip
+01000		STORMONT DUNDAS AND GLENGARRY UCO		View/FI140100 STORMONT DUNDAS AND GLENGARRY UCO.zip
+01012		Cornwall C		View/FI140402 Cornwall C.zip
+01026		North Dundas Tp		View/FI140511 North Dundas Tp.zip
+01016		South Dundas Tp		View/FI140506 South Dundas Tp.zip
+01047		North Glengarry Tp		View/FI140111 North Glengarry Tp.zip
+01002		South Glengarry Tp		View/FI140101 South Glengarry Tp.zip
+01037		North Stormont Tp		View/FI140411 North Stormont Tp.zip
+01009		South Stormont Tp		View/FI140406 South Stormont Tp.zip
+16002		Kawartha Lakes C		View/FI141651 Kawartha Lakes C.zip
+
+53005		Greater Sudbury C		View/FI145307 Greater Sudbury C.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					5700	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			57000		ALGOMA D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+57061		Sault Ste Marie C		View/FI145761 Sault Ste Marie C.zip
+57041		Elliot Lake C		View/FI145741 Elliot Lake C.zip
+57038		Blind River T		View/FI145738 Blind River T.zip
+57021		Bruce Mines T		View/FI145721 Bruce Mines T.zip
+57028		Thessalon T		View/FI145728 Thessalon T.zip
+57006		Hilton Beach V		View/FI145706 Hilton Beach V.zip
+57004		Hilton Tp		View/FI145704 Hilton Tp.zip
+57001		Jocelyn Tp		View/FI145701 Jocelyn Tp.zip
+57016		Johnson Tp		View/FI145716 Johnson Tp.zip
+57011		Laird Tp		View/FI145711 Laird Tp.zip
+57051		Macdonald Meredith et al Tp		View/FI145751 Macdonald Meredith et al Tp.zip
+57076		Wawa M		View/FI145776 Wawa M.zip
+57019		Plummer Additional Tp		View/FI145719 Plummer Additional Tp.zip
+57066		Prince Tp		View/FI145766 Prince Tp.zip
+57008		St Joseph Tp		View/FI145708 St Joseph Tp.zip
+57014		Tarbutt and Tarbutt Additional Tp		View/FI145714 Tarbutt and Tarbutt Additional Tp.zip
+57096		Hornepayne Tp		View/FI145796 Hornepayne Tp.zip
+57040		The North Shore Tp		View/FI145740 The North Shore Tp.zip
+57091		White River Tp		View/FI145791 White River Tp.zip
+57039		Spanish T		View/FI145739 Spanish T.zip
+57079		Dubreuilville Tp		View/FI145779 Dubreuilville Tp.zip
+57023		Huron Shores M		View/FI145724 Huron Shores M.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					5600	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			56000		COCHRANE D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+56027		Timmins C		View/FI145627 Timmins C.zip
+56076		Hearst T		View/FI145676 Hearst T.zip
+56031		Iroquois Falls T		View/FI145631 Iroquois Falls T.zip
+56066		Kapuskasing T		View/FI145666 Kapuskasing T.zip
+56048		Smooth Rock Falls T		View/FI145648 Smooth Rock Falls T.zip
+56037		Cochrane T		View/FI145639 Cochrane T.zip
+56065		Moosonee T		View/FI145665 Moosonee T.zip
+56014		Black River-Matheson Tp		View/FI145614 Black River-Matheson Tp.zip
+56056		Moonbeam Tp		View/FI145656 Moonbeam Tp.zip
+56052		Fauquier-Strickland Tp		View/FI145652 Fauquier-Strickland Tp.zip
+56070		Val Rita-Harty Tp		View/FI145670 Val Rita-Harty Tp.zip
+56077		Mattice-Val Cote Tp		View/FI145677 Mattice-Val Cote Tp.zip
+56073		Opasatika Tp		View/FI145673 Opasatika Tp.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					5100	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			51000		MANITOULIN D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+51026		Gore Bay T		View/FI145126 Gore Bay T.zip
+51015		Northeastern Manitoulin and The Islands T		View/FI145119 Northeastern Manitoulin and The Islands T.zip
+51011		Assiginack Tp		View/FI145111 Assiginack Tp.zip
+51021		Billings Tp		View/FI145121 Billings Tp.zip
+51028		Burpee and Mills Tp		View/FI145128 Burpee and Mills Tp.zip
+51034		Cockburn Island Tp		View/FI145134 Cockburn Island Tp.zip
+51025		Gordon-Barrie Island M		View/FI145125 Gordon-Barrie Island M.zip
+51001		Tehkummah Tp		View/FI145101 Tehkummah Tp.zip
+51009		Central Manitoulin M		View/FI145104 Central Manitoulin M.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					4800	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			48000		NIPISSING D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+48044		North Bay C		View/FI144844 North Bay C.zip
+48021		Mattawa T		View/FI144821 Mattawa T.zip
+48069		Temagami M		View/FI144869 Temagami M.zip
+48050		West Nipissing M		View/FI144852 West Nipissing M.zip
+48001		South Algonquin Tp		View/FI144801 South Algonquin Tp.zip
+48026		Bonfield Tp		View/FI144826 Bonfield Tp.zip
+48022		Calvin Tp		View/FI144822 Calvin Tp.zip
+48031		Chisholm Tp		View/FI144831 Chisholm Tp.zip
+48034		East Ferris M		View/FI144834 East Ferris M.zip
+48019		Mattawan Tp		View/FI144819 Mattawan Tp.zip
+48017		Papineau-Cameron Tp		View/FI144816 Papineau-Cameron Tp.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					4900	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			49000		PARRY SOUND D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+49018		Kearney T		View/FI144918 Kearney T.zip
+49032		Parry Sound T		View/FI144932 Parry Sound T.zip
+49058		Powassan M		View/FI144959 Powassan M.zip
+49022		Burks Falls V		View/FI144922 Burks Falls V.zip
+49056		South River V		View/FI144956 South River V.zip
+49048		Sundridge V		View/FI144948 Sundridge V.zip
+49019		Armour Tp		View/FI144919 Armour Tp.zip
+49036		Carling Tp		View/FI144936 Carling Tp.zip
+49039		Whitestone M		View/FI144939 Whitestone M.zip
+49066		Callander M		View/FI144966 Callander M.zip
+49051		Joly Tp		View/FI144951 Joly Tp.zip
+49054		Machar Tp		View/FI144954 Machar Tp.zip
+49031		McDougall Tp		View/FI144931 McDougall Tp.zip
+49028		McKellar Tp		View/FI144928 McKellar Tp.zip
+49012		McMurrich-Monteith Tp		View/FI144912 McMurrich-Monteith Tp.zip
+49071		Nipissing Tp		View/FI144971 Nipissing Tp.zip
+49014		Perry Tp		View/FI144914 Perry Tp.zip
+49024		Ryerson Tp		View/FI144924 Ryerson Tp.zip
+49046		Strong Tp		View/FI144946 Strong Tp.zip
+49005		The Archipelago Tp		View/FI144905 The Archipelago Tp.zip
+49041		Magnetawan M		View/FI144944 Magnetawan M.zip
+49003		Seguin Tp		View/FI144903 Seguin Tp.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					5200	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			52000		SUDBURY D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+52026		Espanola T		View/FI145226 Espanola T.zip
+52001		French River M		View/FI145201 French River M.zip
+52003		Killarney M		View/FI145136 Killarney M.zip
+52007		Markstay-Warren M		View/FI145208 Markstay-Warren M.zip
+52004		St Charles M		View/FI145204 St Charles M.zip
+52028		Baldwin Tp		View/FI145228 Baldwin Tp.zip
+52092		Chapleau Tp		View/FI145292 Chapleau Tp.zip
+52031		Nairn and Hyman Tp		View/FI145231 Nairn and Hyman Tp.zip
+52019		Sables-Spanish Rivers Tp		View/FI145218 Sables-Spanish Rivers Tp.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					5400	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			54000		TIMISKAMING D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+54010		Temiskaming Shores C		View/FI145418 Temiskaming Shores C.zip
+54008		Cobalt T		View/FI145408 Cobalt T.zip
+54052		Englehart T		View/FI145452 Englehart T.zip
+54068		Kirkland Lake T		View/FI145468 Kirkland Lake T.zip
+54006		Latchford T		View/FI145406 Latchford T.zip
+54038		Thornloe V		View/FI145438 Thornloe V.zip
+54036		Armstrong Tp		View/FI145436 Armstrong Tp.zip
+54032		Brethour Tp		View/FI145432 Brethour Tp.zip
+54029		Casey Tp		View/FI145429 Casey Tp.zip
+54054		Chamberlain Tp		View/FI145454 Chamberlain Tp.zip
+54001		Coleman Tp		View/FI145401 Coleman Tp.zip
+54049		Evanturel Tp		View/FI145449 Evanturel Tp.zip
+54026		Harley Tp		View/FI145426 Harley Tp.zip
+54014		Harris Tp		View/FI145414 Harris Tp.zip
+54034		Hilliard Tp		View/FI145434 Hilliard Tp.zip
+54021		Hudson Tp		View/FI145421 Hudson Tp.zip
+54042		James Tp		View/FI145442 James Tp.zip
+54024		Kerns Tp		View/FI145424 Kerns Tp.zip
+54062		Larder Lake Tp		View/FI145462 Larder Lake Tp.zip
+54058		McGarry Tp		View/FI145458 McGarry Tp.zip
+54066		Gauthier Tp		View/FI145466 Gauthier Tp.zip
+54056		Matachewan Tp		View/FI145456 Matachewan Tp.zip
+54047		Charlton-Dack M		View/FI145447 Charlton-Dack M.zip
+
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					6000	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			60000		KENORA D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+60025		Dryden C		View/FI146026 Dryden C.zip
+60011		Kenora C		View/FI146016 Kenora C.zip
+60034		Sioux Lookout M		View/FI146034 Sioux Lookout M.zip
+60040		Red Lake M		View/FI146041 Red Lake M.zip
+60001		Ignace Tp		View/FI146001 Ignace Tp.zip
+60021		Machin Tp		View/FI146021 Machin Tp.zip
+60042		Ear Falls Tp		View/FI146042 Ear Falls Tp.zip
+60049		Pickle Lake Tp		View/FI146049 Pickle Lake Tp.zip
+60008		Sioux Narrows-Nestor Falls Tp		View/FI146008 Sioux Narrows-Nestor Falls Tp.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					5900	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			59000		RAINY RIVER D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+59012		Fort Frances T		View/FI145912 Fort Frances T.zip
+59042		Rainy River T		View/FI145942 Rainy River T.zip
+59011		Alberton Tp		View/FI145911 Alberton Tp.zip
+59001		Atikokan Tp		View/FI145901 Atikokan Tp.zip
+59024		Chapple Tp		View/FI145924 Chapple Tp.zip
+59019		Emo Tp		View/FI145919 Emo Tp.zip
+59016		La Vallee Tp		View/FI145916 La Vallee Tp.zip
+59031		Morley Tp		View/FI145931 Morley Tp.zip
+59040		Dawson Tp		View/FI145934 Dawson Tp.zip
+59045		Lake of The Woods Tp		View/FI145946 Lake of The Woods Tp.zip
+<TR BGColor="#DCDCDC"><TD Align ="Center" VAlign="Middle"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">					5800	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			58000		THUNDER BAY D		</A></FONT></TD><TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">				-		</FONT></TD>					<TD Align ="Center"><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">			-	</FONT></TD>		<TD Align ="Center" NOWRAP><FONT Size="-1" Face="Arial, Helvetica, Sans-Serif">		-	</FONT></TD></TR>
+58004		Thunder Bay C		View/FI145804 Thunder Bay C.zip
+58059		Marathon T		View/FI145859 Marathon T.zip
+58058		Greenstone M		View/FI145876 Greenstone M.zip
+58019		Conmee Tp		View/FI145819 Conmee Tp.zip
+58034		Dorion Tp		View/FI145834 Dorion Tp.zip
+58012		Gillies Tp		View/FI145812 Gillies Tp.zip
+58001		Neebing M		View/FI145801 Neebing M.zip
+58044		Nipigon Tp		View/FI145844 Nipigon Tp.zip
+58016		OConnor Tp		View/FI145816 OConnor Tp.zip
+58051		Schreiber Tp		View/FI145851 Schreiber Tp.zip
+58028		Shuniah M		View/FI145828 Shuniah M.zip
+58054		Terrace Bay Tp		View/FI145854 Terrace Bay Tp.zip
+58066		Manitouwadge Tp		View/FI145866 Manitouwadge Tp.zip
+58041		Red Rock Tp		View/FI145841 Red Rock Tp.zip
+58007		Oliver Paipoonge M		View/FI145808 Oliver Paipoonge M.zip
+
+28005		Haldimand County		View/FI142810 Haldimand County.zip
+28030		Norfolk County		View/FI143310 Norfolk County.zip
+30000		WATERLOO R		View/FI143000 WATERLOO R.zip
+30006		Cambridge C		View/FI143006 Cambridge C.zip
+30012		Kitchener C		View/FI143012 Kitchener C.zip
+30016		Waterloo C		View/FI143016 Waterloo C.zip
+30001		North Dumfries Tp		View/FI143001 North Dumfries Tp.zip
+30024		Wellesley Tp		View/FI143024 Wellesley Tp.zip
+30018		Wilmot Tp		View/FI143018 Wilmot Tp.zip
+30029		Woolwich Tp		View/FI143029 Woolwich Tp.zip
+32000		OXFORD CO		View/FI143200 OXFORD CO.zip
+32042		Woodstock C		View/FI143242 Woodstock C.zip
+32018		Ingersoll T		View/FI143218 Ingersoll T.zip
+32004		Tillsonburg T		View/FI143204 Tillsonburg T.zip
+32045		Blandford-Blenheim Tp		View/FI143245 Blandford-Blenheim Tp.zip
+32038		East Zorra-Tavistock Tp		View/FI143238 East Zorra-Tavistock Tp.zip
+32002		Norwich Tp		View/FI143202 Norwich Tp.zip
+32011		South-West Oxford Tp		View/FI143211 South-West Oxford Tp.zip
+32027		Zorra Tp		View/FI143227 Zorra Tp.zip
+29006		Brantford C		View/FI142906 Brantford C.zip
+29002		Brant County		View/FI142920 Brant County.zip
+41000		BRUCE CO		View/FI144100 BRUCE CO.zip
+41053		The South Bruce Peninsula T		View/FI144102 The South Bruce Peninsula T.zip
+41043		Saugeen Shores T		View/FI144110 Saugeen Shores T.zip
+41037		Arran-Elderslie M		View/FI144103 Arran-Elderslie M.zip
+41030		Brockton M		View/FI144104 Brockton M.zip
+41061		Northern Bruce Peninsula M		View/FI144109 Northern Bruce Peninsula M.zip
+41010		Huron-Kinloss Tp		View/FI144107 Huron-Kinloss Tp.zip
+41020		Kincardine M		View/FI144108 Kincardine M.zip
+41004		South Bruce M		View/FI144105 South Bruce M.zip
+34000		ELGIN CO		View/FI143400 ELGIN CO.zip
+34021		St Thomas C		View/FI143421 St Thomas C.zip
+34011		Aylmer T		View/FI143411 Aylmer T.zip
+34024		Southwold Tp		View/FI143424 Southwold Tp.zip
+34003		Bayham M		View/FI143401 Bayham M.zip
+34015		Central Elgin M		View/FI143418 Central Elgin M.zip
+34028		Dutton-Dunwich M		View/FI143429 Dutton-Dunwich M.zip
+34007		Malahide Tp		View/FI143408 Malahide Tp.zip
+34035		West Elgin M		View/FI143434 West Elgin M.zip
+37000		ESSEX CO		View/FI143700 ESSEX CO.zip
+37039		Windsor C		View/FI143739 Windsor C.zip
+37034		LaSalle T		View/FI143734 LaSalle T.zip
+37025		Amherstburg T		View/FI143729 Amherstburg T.zip
+37020		Essex T		View/FI143754 Essex T.zip
+37008		Kingsville T		View/FI143711 Kingsville T.zip
+37049		Lakeshore T		View/FI143751 Lakeshore T.zip
+37003		Leamington M		View/FI143706 Leamington M.zip
+37043		Tecumseh T		View/FI143744 Tecumseh T.zip
+37001		Pelee Tp		View/FI143701 Pelee Tp.zip
+42000		GREY CO		View/FI144200 GREY CO.zip
+42059		Owen Sound C		View/FI144259 Owen Sound C.zip
+42029		Hanover T		View/FI144229 Hanover T.zip
+42041		The Blue Mountains T		View/FI144242 The Blue Mountains T.zip
+42047		Meaford M		View/FI144210 Meaford M.zip
+42031		Chatsworth Tp		View/FI144204 Chatsworth Tp.zip
+42005		Southgate Tp		View/FI144207 Southgate Tp.zip
+42055		Georgian Bluffs Tp		View/FI144203 Georgian Bluffs Tp.zip
+42013		Grey Highlands M		View/FI144208 Grey Highlands M.zip
+42004		West Grey M		View/FI144205 West Grey M.zip
+40000		HURON CO		View/FI144000 HURON CO.zip
+40028		Goderich T		View/FI144028 Goderich T.zip
+40010		Bluewater M		View/FI144020 Bluewater M.zip
+40003		South Huron M		View/FI144010 South Huron M.zip
+40015		Huron East M		View/FI144040 Huron East M.zip
+40046		Howick Tp		View/FI144046 Howick Tp.zip
+40025		Central Huron M		View/FI144030 Central Huron M.zip
+40030		Ashfield-Colborne-Wawanosh Tp		View/FI144070 Ashfield-Colborne-Wawanosh Tp.zip
+40048		Morris-Turnberry M		View/FI144060 Morris-Turnberry M.zip
+40050		North Huron Tp		View/FI144050 North Huron Tp.zip
+36003		Chatham-Kent M		View/FI143650 Chatham-Kent M.zip
+38000		LAMBTON CO		View/FI143800 LAMBTON CO.zip
+38030		Sarnia C		View/FI143829 Sarnia C.zip
+38037		Lambton Shores M		View/FI143845 Lambton Shores M.zip
+38019		Petrolia T		View/FI143819 Petrolia T.zip
+38033		Plympton-Wyoming T		View/FI143835 Plympton-Wyoming T.zip
+38018		Oil Springs V		View/FI143818 Oil Springs V.zip
+38031		Point Edward V		View/FI143831 Point Edward V.zip
+38016		Enniskillen Tp		View/FI143816 Enniskillen Tp.zip
+38005		Dawn-Euphemia Tp		View/FI143806 Dawn-Euphemia Tp.zip
+38040		Warwick Tp		View/FI143841 Warwick Tp.zip
+38011		Brooke-Alvinston M		View/FI143815 Brooke-Alvinston M.zip
+38002		St Clair Tp		View/FI143805 St Clair Tp.zip
+39000		MIDDLESEX CO		View/FI143900 MIDDLESEX CO.zip
+39036		London C		View/FI143936 London C.zip
+39002		Newbury V		View/FI143902 Newbury V.zip
+39020		Middlesex Centre M		View/FI143939 Middlesex Centre M.zip
+39057		Lucan Biddulph Tp		View/FI143958 Lucan Biddulph Tp.zip
+39010		Adelaide-Metcalfe Tp		View/FI143946 Adelaide-Metcalfe Tp.zip
+39041		North Middlesex M		View/FI143954 North Middlesex M.zip
+39003		Southwest Middlesex M		View/FI143906 Southwest Middlesex M.zip
+39013		Strathroy-Caradoc Tp		View/FI143916 Strathroy-Caradoc Tp.zip
+39025		Thames Centre M		View/FI143926 Thames Centre M.zip
+31000		PERTH CO		View/FI143100 PERTH CO.zip
+31011		Stratford C		View/FI143111 Stratford C.zip
+31016		St Marys ST		View/FI143116 St Marys ST.zip
+31035		North Perth M		View/FI143140 North Perth M.zip
+31002		Perth East Tp		View/FI143110 Perth East Tp.zip
+31008		Perth South Tp		View/FI143120 Perth South Tp.zip
+31017		West Perth M		View/FI143130 West Perth M.zip
+23000		WELLINGTON CO		View/FI142300 WELLINGTON CO.zip
+23008		Guelph C		View/FI142308 Guelph C.zip
+23015		Erin T		View/FI142316 Erin T.zip
+23040		Minto T		View/FI142341 Minto T.zip
+23001		Puslinch Tp		View/FI142301 Puslinch Tp.zip
+23010		Centre Wellington Tp		View/FI142326 Centre Wellington Tp.zip
+23005		Guelph-Eramosa Tp		View/FI142311 Guelph-Eramosa Tp.zip
+23023		Mapleton Tp		View/FI142332 Mapleton Tp.zip
+23020		Wellington North Tp		View/FI142349 Wellington North Tp.zip
