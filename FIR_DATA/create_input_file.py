@@ -101,36 +101,44 @@ def append_child_data(node, path_list, curr_path=None):
 
 
 def build_csv_data(list_of_paths):
-    pass
+    max_length = 0
+    for sub_path in list_of_paths:
+        if len(sub_path) > max_length:
+            max_length = len(sub_path)
+    for sub_path in list_of_paths:
+        sub_path.extend([''] * (max_length ( len(sub_path))))
 
 
-def add_metadata():
+def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
     """
-    _META_START_,
-    SOURCE_DOCUMENT_LINK_ORIGINAL,
-    SOURCE_DOCUMENT_LINK_COPY,https://drive.google.com/open?id=0B208oCU9D8OuVmZIU0tFRkhTcU0
-    SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY,https://drive.google.com/open?id=0B208oCU9D8OuZW9OVU5sUVZtVDg
-    SOURCE_DOCUMENT_TITLE,"CITY OF TORONTO CONSOLIDATED FINANCIAL STATEMENTS FOR THE YEAR ENDED DECEMBER 31, 1998"
-    SOURCE_DOCUMENT_TABLE_LOCATION,p.17
-    SOURCE_DOCUMENT_TABLE_TITLE,"CONSOLIDATED STATEMENT OF OPERATIONS FOR THE YEAR ENDED DECEMBER 31, 1998"
-    SOURCE_CSV_PRECURSOR_LINK,https://drive.google.com/open?id=0B0nzg-ld6eh_LXBTX0dmMWQtNlU
-    SOURCE_CSV_PRECURSOR_AUTHOR_ID,Chris
-    YEAR,1998
-    VERSION,Actual
-    ASPECT,Revenues
-    NOTES_CONTENT,
-    NOTES_SEVERITY,
-    UNITS_NAME,Dollar
-    UNITS_CODE,DOLLAR
-    UNITS_MULTIPLIER,1000
-    TOTAL_AMOUNT,
-    INTAKE_DATETIME,
-    INTAKE_OPERATOR_ID,Chris
-    COLUMNS_CATEGORIES,Program:NAME
-    COLUMNS_ATTRIBUTES,"Amount:VALUE, Notes:DESCRIPTION, Severity: CODE"
-    _META_END_,
+    Prepend metadata needed for Budgetpedia intake process
     """
-    pass
+    url_prefix = 'https://efis.fma.csc.gov.on.ca/fir/'
+    meta_vals = [['_META_START_'],
+                 ['SOURCE_DOCUMENT_LINK_ORIGINAL'],
+                 ['SOURCE_DOCUMENT_LINK_COPY'],
+                 ['SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY'],
+                 ['SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY'],
+                 ['SOURCE_DOCUMENT_TITLE'],
+                 ['SOURCE_DOCUMENT_TABLE_LOCATION'],
+                 ['SOURCE_DOCUMENT_TABLE_TITLE'],
+                 ['SOURCE_CSV_PRECURSOR_LINK'],
+                 ['SOURCE_CSV_PRECURSOR_AUTHOR_ID', 'Chris'],
+                 ['YEAR', year_val],
+                 ['VERSION'],
+                 ['ASPECT'],
+                 ['NOTES_CONTENT'],
+                 ['NOTES_SEVERITY'],
+                 ['UNITS_NAME', 'Dollar'],
+                 ['UNITS_MULTIPLIER', 1],
+                 ['TOTAL_AMOUNT'],
+                 ['INTAKE_DATETIME'],
+                 ['INTAKE_OPERATOR_ID', 'Chris'],
+                 ['COLUMNS_CATEGORIES', 'Program:NAME'],
+                 ['COLUMNS_ATTRIBUTES'],
+                 ['_META_END_']]
+
+    for val in meta_vals:
 
 
 def main(argv):
@@ -218,7 +226,9 @@ def main(argv):
     # build csv
     roots = tree_for_year.root_nodes()
     all_paths = []
-    test_path = append_child_data(tree_for_year.get_node(roots[0]), all_paths)
+    for node in roots:
+        pass
+    append_child_data(tree_for_year.get_node(roots[0]), all_paths)
     for path in all_paths:
         print(path)
 
