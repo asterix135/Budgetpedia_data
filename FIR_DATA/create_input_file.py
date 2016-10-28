@@ -106,17 +106,34 @@ def build_csv_data(list_of_paths):
         if len(sub_path) > max_length:
             max_length = len(sub_path)
     for sub_path in list_of_paths:
-        sub_path.extend([''] * (max_length ( len(sub_path))))
+        sub_path.extend([''] * (max_length (len(sub_path))))
+
+
+def find_source_url(file_path, muni_id, year_val):
+    with open(file_path) as f:
+        reader = csv.reader(f, delimiter='\t')
+        for row in reader:
+            if row[0] == muni_id:
+                return row[2]
 
 
 def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
     """
     Prepend metadata needed for Budgetpedia intake process
+    :param list_of_paths: list of list containing path info on data_set
+    :param max_path_length: integer with length of longest path_list
+    :param muni_id: integer identifying municipality
+    :param year_val: integer identifying year
+    :returns list of lists: combining metadata with list_of_paths
     """
     url_prefix = 'https://efis.fma.csc.gov.on.ca/fir/'
+    file_prefix = '2009_and_later/html_tables/'
+    lookup_file = file_prefix + str(year_val) + '.txt'
+    source_url = file_prefix + find_source_url(lookup_file, muni_id, year_val)
     meta_vals = [['_META_START_'],
-                 ['SOURCE_DOCUMENT_LINK_ORIGINAL'],
-                 ['SOURCE_DOCUMENT_LINK_COPY'],
+                 ['SOURCE_DOCUMENT_LINK_ORIGINAL', source_url],
+                 ['SOURCE_DOCUMENT_LINK_COPY',
+                    'https://efis.fma.csc.gov.on.ca/fir/fir.csv'],
                  ['SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY'],
                  ['SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY'],
                  ['SOURCE_DOCUMENT_TITLE'],
@@ -137,8 +154,9 @@ def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
                  ['COLUMNS_CATEGORIES', 'Program:NAME'],
                  ['COLUMNS_ATTRIBUTES'],
                  ['_META_END_']]
-
     for val in meta_vals:
+        val.extend([''] * (max_path_length - len(val)))
+    return meta_vals.extend(list_of_paths)
 
 
 def main(argv):
