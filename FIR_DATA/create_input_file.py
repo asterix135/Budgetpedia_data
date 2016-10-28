@@ -60,6 +60,7 @@ def populate_tree(tree, city_year_data):
                       (already subset from all data)
     :returns Tree: copy of tree with values populated into leaves
     """
+    # TODO: Rather than copy, perhaps wipe current tree and start over
     new_tree = tree.copy_tree()
     for data_point in city_year_data:
         if new_tree.has_node(data_point):
@@ -71,14 +72,15 @@ def populate_tree(tree, city_year_data):
 
 def append_child_data(node, path_list, curr_path=None):
     """
-    Recursive function to build csv file for Budgetpedia input
+    Recursive function to build list of lists than can be turned into a csv
+        for Budgetpedia input
     :param node: a Node object.  First call should be to a root node.
                  Recursive calls will run on child nodes
     :param path_list: A list.  Empty unless there are columns that need to be
                       inserted before root node's code, desc for root node
     :param curr_path: DO NOT supply on original call - only for recursion
-    :returns nothing this is modified by the function so does not need to
-                        be specified
+    :returns nothing: path_list param is modified by the function and changed
+                      version can be used in parent function
     """
     if node.is_leaf():
         path_extension = [node.node_key(),
@@ -237,16 +239,23 @@ def main(argv):
     # build tree
     budget_tree = build_category_tree(link_file, all_cats)
     # populate tree for each city/year
+
     # TODO: make this general - right now it's only test for 1 yr of toronto
-    data_to_populate = city_data['20002']['2014']
+    muni_id = '20002'
+    year_val = '2014'
+    data_to_populate = city_data[muni_id][year_val]
     tree_for_year = populate_tree(budget_tree, data_to_populate)
 
     # build csv
     roots = tree_for_year.root_nodes()
-    all_paths = []
     for node in roots:
-        pass
-    append_child_data(tree_for_year.get_node(roots[0]), all_paths)
+        all_paths = []
+        append_child_data(tree_for_year.get_node(node), all_paths)
+        data_to_write = add_metadata(all_paths, 1, muni_id, year_val)
+
+        # TODO: Need function to write csv to drive
+
+    # append_child_data(tree_for_year.get_node(roots[0]), all_paths)
     for path in all_paths:
         print(path)
 
