@@ -102,7 +102,12 @@ def append_child_data(node, path_list, curr_path=None):
             append_child_data(child_node, path_list, curr_path[:])
 
 
-def build_csv_data(list_of_paths):
+def set_path_lengths_equal(list_of_paths):
+    """
+    Appends empty commas to each row so that each row is identical length
+    :param list_of_paths: list of lists, where each sublist is path to cost
+    :returns nothing: list_of_paths is modified by function
+    """
     max_length = 0
     for sub_path in list_of_paths:
         if len(sub_path) > max_length:
@@ -112,11 +117,20 @@ def build_csv_data(list_of_paths):
 
 
 def find_source_url(file_path, muni_id, year_val):
+    """
+    looks up url for source file for a municipality and year from relevant year
+    table
+    :param file_path: string indicating where lookup table is found
+    :param muni_id: string indicating municipal id number in table
+    :param year_val: string indicating year to lookup
+    :returns string: absolute url of source file
+    """
+    url_prefix = 'https://efis.fma.csc.gov.on.ca/fir/'
     with open(file_path) as f:
         reader = csv.reader(f, delimiter='\t')
         for row in reader:
             if row[0] == muni_id:
-                return row[2]
+                return url_prefix + row[2]
 
 
 def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
@@ -128,10 +142,9 @@ def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
     :param year_val: integer identifying year
     :returns list of lists: combining metadata with list_of_paths
     """
-    url_prefix = 'https://efis.fma.csc.gov.on.ca/fir/'
     file_prefix = '2009_and_later/html_tables/'
     lookup_file = file_prefix + str(year_val) + '.txt'
-    source_url = file_prefix + find_source_url(lookup_file, muni_id, year_val)
+    source_url = find_source_url(lookup_file, muni_id, year_val)
     meta_vals = [['_META_START_'],
                  ['SOURCE_DOCUMENT_LINK_ORIGINAL', source_url],
                  ['SOURCE_DOCUMENT_LINK_COPY',
