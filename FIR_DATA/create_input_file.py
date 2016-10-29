@@ -116,7 +116,7 @@ def set_path_lengths_equal(list_of_paths):
         if len(sub_path) > max_length:
             max_length = len(sub_path)
     for sub_path in list_of_paths:
-        sub_path.extend([''] * (max_length (len(sub_path))))
+        sub_path.extend([''] * (max_length - (len(sub_path))))
 
 
 def find_source_url(file_path, muni_id, year_val):
@@ -173,7 +173,8 @@ def add_metadata(list_of_paths, muni_id, year_val, root_val):
                  ['COLUMNS_CATEGORIES', 'Program:NAME'],
                  ['COLUMNS_ATTRIBUTES'],
                  ['_META_END_']]
-    return meta_vals.extend(list_of_paths)
+    meta_vals.extend(list_of_paths)
+    return meta_vals
 
 
 def get_municipality_name(file_path, muni_id, year_val):
@@ -204,14 +205,14 @@ def write_csv_file(list_of_paths, year_val, muni_id, root_val):
     """
     file_prefix = '2009_and_later/html_tables/'
     lookup_file = file_prefix + str(year_val) + '.txt'
-    muni_name = get_municipality_name(lookup_file, muni_name, year_val)
-    save_dir = 'FIR_DATA/2009_and_later/precursor_files/' + muni_name + \
-               ASPECT_DIR[root_val]
+    muni_name = get_municipality_name(lookup_file, muni_id, year_val)
+    save_dir = '2009_and_later/precursor_files/' + muni_name + \
+               '/' + ASPECT_DIR[root_val]
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    file_name = year_val + '.' + ASPECT_DIR[root_val] + '.csv'
+    file_name = save_dir + '/' + year_val + '.' + ASPECT_DIR[root_val] + '.csv'
     with open(file_name, 'w') as f:
-        writer = csv.writer()
+        writer = csv.writer(f)
         for path in list_of_paths:
             writer.writerow(path)
 
@@ -310,7 +311,9 @@ def main(argv):
     for node in roots:
         all_paths = []
         append_child_data(tree_for_year.get_node(node), all_paths)
-        # all_paths now contains final node values
+        # remove details on root node
+        for path_no in range(len(all_paths)):
+            all_paths[path_no] = all_paths[path_no][2:]
         data_to_write = add_metadata(all_paths, muni_id, year_val, node)
         set_path_lengths_equal(data_to_write)
         write_csv_file(data_to_write, year_val, muni_id, node)
