@@ -11,6 +11,7 @@ python3 create_input_file.py city_id data_set_id
 
 import sys
 import csv
+import os
 from tree import Tree
 # import pandas
 
@@ -24,6 +25,8 @@ NEW_MAP = '2009_and_later/FIR - CSV and RDA file Documentation - ' \
           'Data Dictionary.csv'
 OLD_MAP = 'pre_2009/FIR - CSV and RDA file Documentation - 2000 to 2008 - ' \
         'Data Dictionary.csv'
+EXPORT_PATH = '2009_and_later/precursor_files/'  # relative to this file
+ASPECT_DIR = {'REV': 'revenues', 'EXP': 'expenses', 'STF': 'staffing'}
 
 
 def build_category_tree(link_file, cat_description_dict):
@@ -57,7 +60,7 @@ def populate_tree(tree, city_year_data):
     Takes existing tree and adds values for specific city in specific year
     :param tree: Tree object, fully fleshed out
     :param city_year_data: dict with city data values for specific city & year
-                      (already subset from all data)
+                           (should be a subset from all data)
     :returns Tree: copy of tree with values populated into leaves
     """
     # TODO: Rather than copy, perhaps wipe current tree and start over
@@ -133,13 +136,14 @@ def find_source_url(file_path, muni_id, year_val):
                 return url_prefix + row[2]
 
 
-def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
+def add_metadata(list_of_paths, muni_id, year_val, root_val):
     """
     Prepend metadata needed for Budgetpedia intake process
     :param list_of_paths: list of list containing path info on data_set
-    :param max_path_length: integer with length of longest path_list
     :param muni_id: integer identifying municipality
     :param year_val: integer identifying year
+    :param root_val: string of 'REV' 'EXP' or 'STF' indicating what budget
+                     aspect is being written
     :returns list of lists: combining metadata with list_of_paths
     """
     file_prefix = '2009_and_later/html_tables/'
@@ -157,8 +161,8 @@ def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
                  ['SOURCE_CSV_PRECURSOR_LINK'],
                  ['SOURCE_CSV_PRECURSOR_AUTHOR_ID', 'Chris'],
                  ['YEAR', year_val],
-                 ['VERSION'],
-                 ['ASPECT'],
+                 ['VERSION', 'FIR'],
+                 ['ASPECT', ASPECT_DIR[root_val]],
                  ['NOTES_CONTENT'],
                  ['NOTES_SEVERITY'],
                  ['UNITS_NAME', 'Dollar'],
@@ -169,12 +173,54 @@ def add_metadata(list_of_paths, max_path_length, muni_id, year_val):
                  ['COLUMNS_CATEGORIES', 'Program:NAME'],
                  ['COLUMNS_ATTRIBUTES'],
                  ['_META_END_']]
-    for val in meta_vals:
-        val.extend([''] * (max_path_length - len(val)))
     return meta_vals.extend(list_of_paths)
 
 
+def get_municipality_name(file_path, muni_id, year_val):
+    """
+    looks up muncipality name from relevant year data and returns as
+        string (without spaces)
+    :param file_path: string indicating where lookup table is found
+    :param muni_id: string indicating municipal id number in table
+    :param year_val: string indicating year to lookup
+    :returns string: absolute url of source file
+    """
+    with open(file_path) as f:
+        reader = csv.reader(f, delimiter='\t')
+        for row in reader:
+            if row[0] == muni_id:
+                return row[1].replace(' ', '')
+
+
+def write_csv_file(list_of_paths, year_val, muni_id, root_val):
+    """
+    Writes a csv file to disk (no header) with values from list_of_paths
+    file is located in a separate directory for each municipality
+    :param list_of_paths: list of lists including metadata and tree data
+    :param year_val: string indicating year being written
+    :param muni_id: string idenfiying municipality
+    :param root_val: string that is key to ASPECT_DIR
+    :returns nothing:
+    """
+    file_prefix = '2009_and_later/html_tables/'
+    lookup_file = file_prefix + str(year_val) + '.txt'
+    muni_name = get_municipality_name(lookup_file, muni_name, year_val)
+    save_dir = 'FIR_DATA/2009_and_later/precursor_files/' + muni_name + \
+               ASPECT_DIR[root_val]
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+    file_name = year_val + '.' + ASPECT_DIR[root_val] + '.csv'
+    with open(file_name, 'w') as f:
+        writer = csv.writer()
+        for path in list_of_paths:
+            writer.writerow(path)
+
+
 def main(argv):
+    """
+    Main logic - loads various data files and exports csv file for one or all
+    municpalities - one file per year
+    """
     # Set parameters for what gets selected for output
     if len(argv) > 2 and argv[2] == 'old':
         data_file = OLD_DATA
@@ -264,13 +310,11 @@ def main(argv):
     for node in roots:
         all_paths = []
         append_child_data(tree_for_year.get_node(node), all_paths)
-        data_to_write = add_metadata(all_paths, 1, muni_id, year_val)
+        # all_paths now contains final node values
+        data_to_write = add_metadata(all_paths, muni_id, year_val, node)
+        set_path_lengths_equal(data_to_write)
+        write_csv_file(data_to_write, year_val, muni_id, node)
 
-        # TODO: Need function to write csv to drive
-
-    # append_child_data(tree_for_year.get_node(roots[0]), all_paths)
-    for path in all_paths:
-        print(path)
 
 if __name__ == '__main__':
     main(sys.argv)
