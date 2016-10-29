@@ -110,7 +110,7 @@ class Tree():
         self._nodes[node_id] = new_node
 
     def get_node(self, node_id):
-        """Returns a specific node from the tree"""
+        """Returns a specific node from the tree identifed by node_id"""
         if node_id in self._nodes:
             return self._nodes[node_id]
 
@@ -119,7 +119,7 @@ class Tree():
         return list(self._root_nodes)
 
     def has_node(self, node_id):
-        """Returns bookean indicating whether a given node_id is in tree"""
+        """Returns boolean indicating whether a given node_id is in tree"""
         return node_id in self._nodes
 
     def update_node_val(self, node_id, new_val):
@@ -145,4 +145,4 @@ class Tree():
         Resets all values in tree to None
         """
         for node in self._nodes:
-            node.update_val(None)
+            self._nodes[node].update_val(None)
