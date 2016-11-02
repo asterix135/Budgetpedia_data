@@ -3,7 +3,9 @@ Creates input files for budgetpedia from FIR data:
     Either for all cities/year or one city only
 Run from command line - Python 3.5 or later
 cd to folder containing this file
+
 python3 create_input_file.py city_id data_set_id
+
 :param city_id (optional): ID of city to pull data for; 'A' or None selects all
 :param data_set_id (optional): 'old' uses 2000-2008 data;
                                 anything else uses 2009+ data
@@ -66,6 +68,10 @@ def populate_tree(tree, city_year_data):
     # TODO: Rather than copy, perhaps wipe current tree and start over
     new_tree = tree.copy_tree()
     for data_point in city_year_data:
+        try:
+            city_year_data[data_point] = int(city_year_data[data_point])
+        except ValueError:
+            city_year_data[data_point] = None
         if new_tree.has_node(data_point):
             new_tree.update_node_val(data_point, city_year_data[data_point])
         else:
@@ -105,10 +111,33 @@ def append_child_data(node, path_list, curr_path=None):
             append_child_data(child_node, path_list, curr_path[:])
 
 
-def set_path_lengths_equal(list_of_paths):
+def add_column_categories(max_length, root_node_name):
+    """
+    function to generate values for metadata COLUMNS_CATEGORIES
+    :param max_length: integer - maximum tree depth
+    :param root_node_name: string - either REV EXP or STF
+    :returns string: concatenated text for metadata
+    """
+    if root_node_name == 'REV':
+        txt1 = 'RevenueLevel'
+        txt2 = ':CODE,RevenueLevel'
+    elif root_node_name == 'EXP':
+        txt1 = 'ExpenseLevel'
+        txt2 = ':CODE,ExpenseLevel'
+    else:
+        txt1 = 'StaffingLevel'
+        txt2 = ':CODE,StaffingLevel'
+    col_cats = ''
+    for i in range(max_length // 2):
+        col_cats += txt1 + str(i + 1) + txt2 + str(i + 1) + 'NAME,'
+    return col_cats[:-1]
+
+
+def set_path_lengths_equal(list_of_paths, root_node_name):
     """
     Appends empty commas to each row so that each row is identical length
     :param list_of_paths: list of lists, where each sublist is path to cost
+    :param root_node_name: code either REV EXP or STF
     :returns nothing: list_of_paths is modified by function
     """
     max_length = 0
@@ -116,7 +145,15 @@ def set_path_lengths_equal(list_of_paths):
         if len(sub_path) > max_length:
             max_length = len(sub_path)
     for sub_path in list_of_paths:
-        sub_path.extend([''] * (max_length - (len(sub_path))))
+        sub_path_len = len(sub_path)
+        if sub_path_len > 2:
+            num_val = sub_path.pop()
+            sub_path.extend([''] * (max_length - sub_path_len))
+            sub_path.append(num_val)
+        else:
+            sub_path.extend([''] * (max_length - sub_path_len))
+        if sub_path[0] == 'COLUMNS_CATEGORIES':
+            sub_path[1] = add_column_categories(max_length, root_node_name)
 
 
 def find_source_url(file_path, muni_id, year_val):
@@ -133,7 +170,7 @@ def find_source_url(file_path, muni_id, year_val):
         reader = csv.reader(f, delimiter='\t')
         for row in reader:
             if row[0] == muni_id:
-                return url_prefix + row[2]
+                return url_prefix + row[2].replace(' ', '%20')
 
 
 def add_metadata(list_of_paths, muni_id, year_val, root_val):
@@ -154,7 +191,6 @@ def add_metadata(list_of_paths, muni_id, year_val, root_val):
                  ['SOURCE_DOCUMENT_LINK_COPY',
                     'https://efis.fma.csc.gov.on.ca/fir/fir.csv'],
                  ['SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY'],
-                 ['SOURCE_DOCUMENT_LINK_WORKING_DIRECTORY'],
                  ['SOURCE_DOCUMENT_TITLE'],
                  ['SOURCE_DOCUMENT_TABLE_LOCATION'],
                  ['SOURCE_DOCUMENT_TABLE_TITLE'],
@@ -166,12 +202,13 @@ def add_metadata(list_of_paths, muni_id, year_val, root_val):
                  ['NOTES_CONTENT'],
                  ['NOTES_SEVERITY'],
                  ['UNITS_NAME', 'Dollar'],
+                 ['UNITS_CODE', 'DOLLAR'],
                  ['UNITS_MULTIPLIER', 1],
                  ['TOTAL_AMOUNT'],
                  ['INTAKE_DATETIME'],
                  ['INTAKE_OPERATOR_ID', 'Chris'],
                  ['COLUMNS_CATEGORIES', 'Program:NAME'],
-                 ['COLUMNS_ATTRIBUTES'],
+                 ['COLUMNS_ATTRIBUTES', 'Amount:VALUE,Notes:DESCRIPTION,Severity: CODE'],
                  ['_META_END_']]
     meta_vals.extend(list_of_paths)
     return meta_vals
@@ -315,7 +352,7 @@ def main(argv):
         for path_no in range(len(all_paths)):
             all_paths[path_no] = all_paths[path_no][2:]
         data_to_write = add_metadata(all_paths, muni_id, year_val, node)
-        set_path_lengths_equal(data_to_write)
+        set_path_lengths_equal(data_to_write, node)
         write_csv_file(data_to_write, year_val, muni_id, node)
 
 
