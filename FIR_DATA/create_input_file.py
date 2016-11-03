@@ -63,20 +63,21 @@ def populate_tree(tree, city_year_data):
     :param tree: Tree object, fully fleshed out
     :param city_year_data: dict with city data values for specific city & year
                            (should be a subset from all data)
-    :returns Tree: copy of tree with values populated into leaves
+    :returns nothing: modifies original tree
     """
     # TODO: Rather than copy, perhaps wipe current tree and start over
-    new_tree = tree.copy_tree()
+    # new_tree = tree.copy_tree()
+    tree.reset_values()
     for data_point in city_year_data:
         try:
             city_year_data[data_point] = int(city_year_data[data_point])
         except ValueError:
             city_year_data[data_point] = None
-        if new_tree.has_node(data_point):
-            new_tree.update_node_val(data_point, city_year_data[data_point])
+        if tree.has_node(data_point):
+            tree.update_node_val(data_point, city_year_data[data_point])
         else:
             raise KeyError('%s not in Tree' % str(data_point))
-    return new_tree
+    # return new_tree
 
 
 def append_child_data(node, path_list, curr_path=None):
@@ -338,22 +339,28 @@ def main(argv):
     # populate tree for each city/year
 
     # TODO: make this general - right now it's only test for 1 yr of toronto
-    muni_id = '20002'
-    year_val = '2014'
-    data_to_populate = city_data[muni_id][year_val]
-    tree_for_year = populate_tree(budget_tree, data_to_populate)
+    # city_data is dict with muni_id as key
+    #   values are dicts with year as key
 
-    # build csv
-    roots = tree_for_year.root_nodes()
-    for node in roots:
-        all_paths = []
-        append_child_data(tree_for_year.get_node(node), all_paths)
-        # remove details on root node
-        for path_no in range(len(all_paths)):
-            all_paths[path_no] = all_paths[path_no][2:]
-        data_to_write = add_metadata(all_paths, muni_id, year_val, node)
-        set_path_lengths_equal(data_to_write, node)
-        write_csv_file(data_to_write, year_val, muni_id, node)
+    # muni_id = '20002'
+    # year_val = '2014'
+    for muni_id, year_dict in city_data.items():
+        for year_val, data_to_populate in year_dict.items():
+
+    # data_to_populate = city_data[muni_id][year_val]
+            populate_tree(budget_tree, data_to_populate)
+
+            # build csv
+            roots = budget_tree.root_nodes()
+            for node in roots:
+                all_paths = []
+                append_child_data(budget_tree.get_node(node), all_paths)
+                # remove details on root node
+                for path_no in range(len(all_paths)):
+                    all_paths[path_no] = all_paths[path_no][2:]
+                data_to_write = add_metadata(all_paths, muni_id, year_val, node)
+                set_path_lengths_equal(data_to_write, node)
+                write_csv_file(data_to_write, year_val, muni_id, node)
 
 
 if __name__ == '__main__':
