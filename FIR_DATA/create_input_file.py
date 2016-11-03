@@ -15,7 +15,6 @@ import sys
 import csv
 import os
 from tree import Tree
-# import pandas
 
 NEW_CAT_FILE = 'budget_categories.csv'
 OLD_CAT_FILE = 'budget_categories.csv'
@@ -65,8 +64,6 @@ def populate_tree(tree, city_year_data):
                            (should be a subset from all data)
     :returns nothing: modifies original tree
     """
-    # TODO: Rather than copy, perhaps wipe current tree and start over
-    # new_tree = tree.copy_tree()
     tree.reset_values()
     for data_point in city_year_data:
         try:
@@ -77,7 +74,6 @@ def populate_tree(tree, city_year_data):
             tree.update_node_val(data_point, city_year_data[data_point])
         else:
             raise KeyError('%s not in Tree' % str(data_point))
-    # return new_tree
 
 
 def append_child_data(node, path_list, curr_path=None):
@@ -272,12 +268,6 @@ def main(argv):
         cat_file = NEW_CAT_FILE
         link_file = NEW_LINK_FILE
 
-    # TODO: REMOVE AFTER TESTING
-    # data_file = 'test_data/data_file.csv'
-    # map_file = 'test_data/map_file.csv'
-    # cat_file = 'test_data/cat_file.csv'
-    # link_file = 'test_data/link_file.csv'
-
     if len(argv) > 1 and argv[1] != 'A':
         city_id = argv[1]  # argvs are imported as strings
     else:
@@ -333,23 +323,12 @@ def main(argv):
             quit()
     # merge hand-crafted categories and column descriptions into one dict
     all_cats = {**cols_to_import, **my_cats}
-
     # build tree
     budget_tree = build_category_tree(link_file, all_cats)
     # populate tree for each city/year
-
-    # TODO: make this general - right now it's only test for 1 yr of toronto
-    # city_data is dict with muni_id as key
-    #   values are dicts with year as key
-
-    # muni_id = '20002'
-    # year_val = '2014'
     for muni_id, year_dict in city_data.items():
         for year_val, data_to_populate in year_dict.items():
-
-    # data_to_populate = city_data[muni_id][year_val]
             populate_tree(budget_tree, data_to_populate)
-
             # build csv
             roots = budget_tree.root_nodes()
             for node in roots:
