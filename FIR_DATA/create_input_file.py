@@ -50,8 +50,8 @@ def build_category_tree(link_file, cat_description_dict):
                               node_desc=cat_description_dict[line[1]])
     # check to make sure that root nodes are only ['REV', 'EXP', 'STF']
     if not set(cat_tree.root_nodes()).issubset({'REV', 'EXP', 'STF'}):
-        raise ValueError('Tree root nodes are incorrect.  Should be only '
-                         'REV, EXP and STF.\n'
+        raise ValueError('Tree root nodes are incorrect.  Should be only ' \
+                         'REV, EXP and STF.\n' \
                          'Root values are %s' % str(set(cat_tree.root_nodes())))
     return cat_tree
 
