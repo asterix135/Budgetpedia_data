@@ -17,8 +17,8 @@ Working data files to feed into Toronto Budgetpedia process
 python3 create_input_file.py city_id data_set_id
 ```
 
-        - (city_id is optional - numeric value of city in FIR data file, absence or 'A' selects all cities)
-        - (data_set_id is optional - 'old' uses pre-2009 data; anything else uses 2009 and later)
+- (city_id is optional - numeric value of city in FIR data file, absence or 'A' selects all cities)
+- (data_set_id is optional - 'old' uses pre-2009 data; anything else uses 2009 and later)
 
 
 ### Audited Financial Statements
